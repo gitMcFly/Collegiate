@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Statehood",
+        "repositoryURL": "https://github.com/christopherweems/Statehood.git",
+        "state": {
+          "branch": "main",
+          "revision": "59cca9311a376a827a6e784e66d92ac27c38c1cc",
+          "version": null
+        }
+      },
+      {
+        "package": "unstandard",
+        "repositoryURL": "https://github.com/christopherweems/unstandard.git",
+        "state": {
+          "branch": "main",
+          "revision": "4c51b8a6a9fa5d99d99136c949be2fc15f20b880",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
