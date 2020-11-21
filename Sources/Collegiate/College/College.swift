@@ -14,6 +14,8 @@ public struct College: ExpressibleByStringLiteral {
         var title: String
         var state: State?
         
+        var abbreviations: Set<String> = []
+        
         var siteAuthority: String?
         internal var _siteAuthorityUsesHTTPS: Bool?
         
@@ -39,6 +41,7 @@ extension College {
         get { properties[keyPath: propertyKeyPath] }
         set { properties[keyPath: propertyKeyPath] = newValue }
     }
+    
 }
 
 public typealias CollegeGroupBuilder = MixedGroupBuilder<College>
