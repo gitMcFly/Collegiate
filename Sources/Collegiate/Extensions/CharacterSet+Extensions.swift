@@ -8,8 +8,6 @@
 import Foundation
 
 internal extension CharacterSet {
-    var hyphens: CharacterSet {
-        .init(charactersIn: "-­᠆‐‑⁃")
-    }
+    static let hyphens = Self(charactersIn: "-­᠆‐‑⁃")
     
 }
