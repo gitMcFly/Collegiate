@@ -14,7 +14,7 @@ public struct College: ExpressibleByStringLiteral {
         var title: String
         var state: State?
         
-        var abbreviations: Set<String> = []
+        var abbreviations: [String] = []
         
         var siteAuthority: String?
         internal var _siteAuthorityUsesHTTPS: Bool?
