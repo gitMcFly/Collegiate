@@ -45,3 +45,13 @@ extension College {
 }
 
 public typealias CollegeGroupBuilder = MixedGroupBuilder<College>
+
+
+// MARK: -
+
+public extension College.Properties {
+    var primaryAbbreviation: String? {
+        abbreviations.first ?? title.initials
+    }
+    
+}
