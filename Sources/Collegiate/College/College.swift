@@ -16,7 +16,7 @@ public struct College: ExpressibleByStringLiteral {
         
         var siteAuthority: String?
         internal var _siteAuthorityUsesHTTPS: Bool?
-            
+        
         var homePage: String?
         
     }
@@ -36,12 +36,8 @@ extension College {
     }
     
     internal subscript<V>(propertyKeyPath: WritableKeyPath<Properties, V>) -> V {
-        get {
-            properties[keyPath: propertyKeyPath]
-        }
-        set {
-            properties[keyPath: propertyKeyPath] = newValue
-        }
+        get { properties[keyPath: propertyKeyPath] }
+        set { properties[keyPath: propertyKeyPath] = newValue }
     }
 }
 
