@@ -37,3 +37,25 @@ extension String {
     
 }
 
+
+
+extension College {
+    fileprivate func _abbreviation<C>(_ abbreviations: C) -> Self where C: Collection, C.Element == String {
+        var new = self
+        new[\.abbreviations].formUnion(abbreviations)
+        return new
+    }
+    
+    func abbreviation(_ abbreviations: String...) -> Self {
+        _abbreviation(abbreviations)
+    }
+    
+}
+
+extension String {
+    func abbreviation(_ abbreviations: String...) -> College {
+        self.as(College.self)
+            ._abbreviation(abbreviations)
+    }
+    
+}
