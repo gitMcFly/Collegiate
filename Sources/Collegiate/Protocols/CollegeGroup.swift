@@ -9,7 +9,8 @@ import Foundation
 import MixedGroup
 
 public protocol CollegeGroup {
-    typealias Body = MixedGroup<College>
+    typealias Body = Group
+    typealias Group = MixedGroup<College>
     
     @CollegeGroupBuilder var body: Body { get }
     
