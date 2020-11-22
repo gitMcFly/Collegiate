@@ -37,7 +37,14 @@ extension String {
     
 }
 
-
+extension College {
+    func state(_ state: State) -> Self {
+        var new = self
+        new[\.state] = state
+        return new
+    }
+    
+}
 
 extension College {
     fileprivate func _abbreviation<C>(_ abbreviations: C) -> Self where C: Collection, C.Element == String {
