@@ -11,8 +11,8 @@ import Statehood
 
 public struct College: ExpressibleByStringLiteral {
     public struct Properties {
-        var title: String
-        var state: State?
+        public var title: String
+        public var state: State?
         
         var abbreviations: [String] = []
         
@@ -33,8 +33,8 @@ public struct College: ExpressibleByStringLiteral {
 }
 
 extension College {
-    public subscript<V>(property keyPath: KeyPath<Properties, V>) -> V {
-        properties[keyPath: keyPath]
+    public subscript<V>(propertyKeyPath: KeyPath<Properties, V>) -> V {
+        properties[keyPath: propertyKeyPath]
     }
     
     internal subscript<V>(propertyKeyPath: WritableKeyPath<Properties, V>) -> V {
