@@ -14,12 +14,12 @@ public struct College: ExpressibleByStringLiteral {
         public var title: String
         public var state: State?
         
-        var abbreviations: [String] = []
+        public var abbreviations: [String] = []
         
-        var siteAuthority: String?
+        public var siteAuthority: String?
         internal var _siteAuthorityUsesHTTPS: Bool?
         
-        var homePage: String?
+        public var homePage: String?
         
     }
     
