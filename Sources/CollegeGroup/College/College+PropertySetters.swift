@@ -15,10 +15,10 @@ public extension College {
         return new
     }
     
-    func url(_ homepageURLString: String) -> Self {
-        assert(homepageURLString.hasPrefix("http"))
+    func url(_ pageURL: String) -> Self {
+        assert(pageURL.hasPrefix("http"))
         var new = self
-        new[\.homePage] = homepageURLString
+        new[\.homePage] = pageURL
         return new
     }
     
