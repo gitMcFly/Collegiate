@@ -333,8 +333,7 @@ public struct UnitedStates: CollegeGroup {
         .state(.pennsylvania)
         
         Group {
-            "University of Charleston"
-                .url(authority: "www.ucwv.edu")
+
             
         }
         .state(.southCarolina)
@@ -484,8 +483,22 @@ public struct UnitedStates: CollegeGroup {
             "American Military University"
                 .url(authority: "amu.apus.edu")
             
+            "Appalachian Bible College"
+            
+            "Bethany College"
+                .url(authority: "bethanywv.edu")
+            
             "Bluefield State College"
                 .url(authority: "bluefieldstate.edu")
+            
+            "Blue Ridge Community and Technical College"
+                .url(authority: "blueridgectc.edu")
+            
+            "BridgeValley Community and Technical College"
+                .url(authority: "bridgevalley.edu")
+            
+            "University of Charleston"
+                .url(authority: "www.ucwv.edu")
             
             "Concord University"
                 .url(authority: "concord.edu")
@@ -494,11 +507,47 @@ public struct UnitedStates: CollegeGroup {
                 .abbreviation("D&E", "DEWV")
                 .url(authority: "dewv.edu")
             
+            "Eastern West Virginia Community and Technical College"
+                .url(authority: "easternwv.edu")
+            
+            "Fairmont State University"
+            
+            "Future Generations University"
+            
             "Glenville State College"
                 .url(authority: "glenville.edu")
             
+            "Huntington Junior College"
+            
+            "Marshall University"
+            
+            "Mountwest Community and Technical College"
+            
+            "New River Community and Technical College"
+            
+            "Ohio Valley University"
+            
+            "Pierpont Community and Technical College"
+            
+            "Potomac State College of West Virginia University"
+            
+            "Salem University"
+                .url(authority: "salemu.edu")
+            
+            "Shepherd University"
+            
+            "Southern West Virginia Community and Technical College"
+            
             "West Liberty University"
                 .url(authority: "westliberty.edu")
+            
+            "West Virginia Junior College"
+            
+            "West Virginia Northern Community College"
+            
+            "West Virginia School of Osteopathic Medicine"
+            
+            "West Virginia State University"
             
             "West Virginia University"
                 .url(authority: "wvu.edu")
@@ -509,6 +558,12 @@ public struct UnitedStates: CollegeGroup {
             "West Virginia University Institute of Technology"
                 .abbreviation("WVU T", "WVIT", "WVU Beckley", "West Virginia Tech")
                 .url("https://www.wvu.edu/wvutech/")
+            
+            "West Virginia Wesleyan College"
+                .url(authority: "wvwc.edu")
+            
+            "Wheeling University"
+                .url(authority: "wheeling.edu")
             
         }
         .state(.westVirginia)
