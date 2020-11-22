@@ -46,19 +46,3 @@ public extension CollegeGroup {
     }
     
 }
-
-
-// MARK: -
-
-fileprivate struct AnyCollegeGroup: CollegeGroup {
-    @Memoized var body: Body
-    
-    init(@CollegeGroupBuilder _ builder: @escaping () -> CollegeGroup) {
-        _body = Memoized { builder().body }
-    }
-    
-    init<CG: CollegeGroup>(other: CG) {
-        _body = Memoized { other.body }
-    }
-    
-}
