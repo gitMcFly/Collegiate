@@ -683,4 +683,8 @@ public struct UnitedStates: CollegeGroup {
         
     }
     
+    public init() {
+        
+    }
+    
 }

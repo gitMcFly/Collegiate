@@ -14,4 +14,8 @@ struct Malaysia: CollegeGroup {
         
     }
     
+    public init() {
+        
+    }
+    
 }
