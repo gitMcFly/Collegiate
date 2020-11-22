@@ -331,8 +331,111 @@ public struct UnitedStates: CollegeGroup {
         }
         .state(.pennsylvania)
         
-        Group {
-
+        Group { // south carolina
+            
+            Group { // public universities
+                "Clemson University"
+                    .url(authority: "clemson.edu")
+                
+                "Coastal Carolina University"
+                    .url(authority: "coastal.edu")
+                
+                "College of Charleston"
+                    .abbreviation("CofC")
+                    .url(authority: "cofc.edu")
+                
+                "Francis Marion University"
+                    .abbreviation("FM")
+                    .url(authority: "fmarion.edu")
+                
+                "Lander University"
+                    .url(authority: "lander.edu")
+                
+                "South Carolina State University"
+                    .url(authority: "scsu.edu")
+                
+                Group {
+                    "University of South Carolina"
+                        .url(authority: "sc.edu")
+                    
+                    "University of South Carolina Aiken"
+                        .url(authority: "usca.edu")
+                    
+                    "University of South Carolina Beaufort"
+                        .url(authority: "uscb.edu")
+                    
+                    "University of South Carolina Lancaster"
+                        .url(authority: "usclancaster.sc.edu")
+                    
+                    "University of South Carolina Salkehatchie"
+                        .url(authority: "uscsalkehatchie.sc.edu")
+                    
+                    "University of South Carolina Sumter"
+                        .url("https://www.sc.edu/about/system_and_campuses/sumter/")
+                    
+                    "University of South Carolina Union"
+                        .url(authority: "uscunion.sc.edu")
+                    
+                    "University of South Carolina Upstate"
+                        .url(authority: "uscupstate.edu")
+                    
+                }
+                
+                "Winthrop University"
+                    .url(authority: "winthrop.edu")
+                
+            }
+            
+            "Allen University"
+                .url(authority: "allenuniversity.edu")
+            
+            "American College of the Building Arts"
+                .url(authority: "acba.edu")
+            
+            "Anderson University"
+            
+            "Benedict College"
+            
+            "Bob Jones University"
+            
+            "Charleston Southern University"
+            
+            "Claflin University"
+            
+            "Columbia College"
+            
+            "Columbia International University"
+            
+            "Coker University"
+            
+            "Converse College"
+            
+            "Erskine College"
+            
+            "Furman University"
+            
+            "Limestone University"
+            
+            "Morris College"
+            
+            "Newberry College"
+            
+            "North Greenville University"
+            
+            "Presbyterian College"
+            
+            "Sherman College of Chiropractic"
+            
+            "Southern Wesleyan University"
+            
+            "Spartanburg Methodist College"
+            
+            "Voorhees College"
+            
+            "Wofford College"
+            
+            "The Military College of South Carolina"
+                .abbreviation("The Citadel")
             
         }
         .state(.southCarolina)
@@ -483,6 +586,7 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "amu.apus.edu")
             
             "Appalachian Bible College"
+                .url(authority: "abc.edu")
             
             "Bethany College"
                 .url(authority: "bethanywv.edu")
@@ -525,6 +629,7 @@ public struct UnitedStates: CollegeGroup {
             "New River Community and Technical College"
             
             "Ohio Valley University"
+                .url(authority: "ovu.edu")
             
             "Pierpont Community and Technical College"
             
@@ -541,12 +646,14 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "westliberty.edu")
             
             "West Virginia Junior College"
+                .url(authority: "wvjc.edu")
             
             "West Virginia Northern Community College"
             
             "West Virginia School of Osteopathic Medicine"
             
             "West Virginia State University"
+                .url(authority: "wvstateu.edu")
             
             "West Virginia University"
                 .url(authority: "wvu.edu")
@@ -555,7 +662,7 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "wvup.edu")
             
             "West Virginia University Institute of Technology"
-                .abbreviation("WVU T", "WVIT", "WVU Beckley", "West Virginia Tech")
+                .abbreviation("WVU Tech", "WVIT", "WVU Beckley", "West Virginia Tech")
                 .url("https://www.wvu.edu/wvutech/")
             
             "West Virginia Wesleyan College"
