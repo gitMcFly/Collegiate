@@ -14,24 +14,24 @@ public struct UnitedStates: CollegeGroup {
             .url(authority: "acu.edu")
         
         "University of Alabama"
-//            .secondaryCode(abbreviating: "ALA", "BAMA")
+            .abbreviation("UA", "ALA", "Bama")
             .url(authority: "ua.edu")
         
         "University of Alabama at Birmingham"
             .url(authority: "uab.edu")
-//            .priority(1)
         
-        "ASU: Albany State University"
+        "Albany State University"
             .url(authority: "asurams.edu")
         
         "Alderson Broaddus University"
-//            .primaryCode("AB")
+            .abbreviation("AB")
             .url(authority: "ab.edu")
         
         "American Military University"
             .url(authority: "amu.apus.edu")
         
-        "ASU: Appalachian State University"
+        "Appalachian State University"
+            .abbreviation("App State", "App", "ASU")
             .url(authority: "appstate.edu")
         
         "Arizona State University"
@@ -40,7 +40,7 @@ public struct UnitedStates: CollegeGroup {
         "Arkansas Northeastern College"
             .url(authority: "anc.edu")
         
-        "AU, AUB U: Auburn University"
+        "Auburn University"
             .url(authority: "auburn.edu")
         
         "Austin Peay State University"
@@ -49,7 +49,7 @@ public struct UnitedStates: CollegeGroup {
         
         // #B
         
-        "BSC: Bluefield State College"
+        "Bluefield State College"
             .url(authority: "bluefieldstate.edu")
         
         "Boston University"
@@ -64,7 +64,8 @@ public struct UnitedStates: CollegeGroup {
         
         // #C
         
-        "CAL: University of California, Berkeley"
+        "University of California, Berkeley"
+            .abbreviation("Cal", "UC Berkeley")
             .url(authority: "berkeley.edu")
         
         "University of California, Los Angeles"
@@ -76,40 +77,45 @@ public struct UnitedStates: CollegeGroup {
         "Carnegie Mellon University"
             .url(authority: "cmu.edu")
         
-        "CNU: Carson-Newman University"
+        "Carson-Newman University"
+            .abbreviation("CNU", "CN")
             .url(authority: "cn.edu")
         
         "University of Central Florida"
             .url(authority: "ucf.edu")
         
-        "UC, UCWV: University of Charleston"
+        "University of Charleston"
             .url(authority: "www.ucwv.edu")
         
-        "U CHI, UC: University of Chicago"
+        "University of Chicago"
+            .abbreviation("UChicago", "U of C", "Chicago")
             .url(authority: "uchicago.edu")
         
-        "BOOTH: University of Chicago Booth School of Business"
+        "University of Chicago Booth School of Business"
+            .abbreviation("Booth", "Chicago Booth")
             .url(authority: "chicagobooth.edu")
         
         "Christian Brothers University"
             .url(authority: "cbu.edu")
         
-        "CSU: Clayton State University"
+        "Clayton State University"
             .url(authority: "clayton.edu")
         
-        "CU: Concord University"
+        "Concord University"
             .url(authority: "concord.edu")
         
         
         // #D
         
-        "U DEL: University of Delaware"
+        "University of Delaware"
+            .abbreviation("UD", "Delaware")
             .url(authority: "udel.edu")
         
-        "D&E, D&E C, DEWV: Davis & Elkins College"
+        "Davis & Elkins College"
+            .abbreviation("D&E", "DEWV")
             .url(authority: "dewv.edu")
         
-        "DU: Drexel University"
+        "Drexel University"
             .url(authority: "drexel.edu")
         
         
@@ -130,7 +136,7 @@ public struct UnitedStates: CollegeGroup {
         
         // #F
         
-        "FSU: Fayetteville State University"
+        "Fayetteville State University"
             .url(authority: "uncfsu.edu")
         
         "UF, UFL: University of Florida"
@@ -145,7 +151,8 @@ public struct UnitedStates: CollegeGroup {
         "Fort Valley State University"
             .url(authority: "fvsu.edu")
         
-        "FP, FPU: Franklin Pierce University"
+        "Franklin Pierce University"
+            .abbreviation("FP", "FPU")
             .url(authority: "franklinpierce.edu")
         
         "Freed-Hardeman University"
@@ -160,26 +167,29 @@ public struct UnitedStates: CollegeGroup {
         "George Washington University"
             .url(authority: "gwu.edu")
         
-        "UGA, GEO: University of Georgia"
+        "University of Georgia"
+            .abbreviation("UGA", "GEO")
             .url(authority: "uga.edu")
         
         "German-Malaysian Institute"
             .url(authority: "gmi.edu.my")
         
-        "GSC: Glenville State College"
+        "Glenville State College"
             .url(authority: "glenville.edu")
         
         
         // #I
         
-        "IONA: IONA College"
+        "Iona College"
+            .abbreviation("Iona")
             .url(authority: "iona.edu")
        
-        "IOWA: University of Iowa"
-//            .secondaryCode(abbreviating: "U IOWA")
+        "University of Iowa"
+            .abbreviation("UI", "U of I", "UIowa", "Iowa")
             .url(authority: "uiowa.edu")
         
-        "IU: Indiana University, Bloomington"
+        "Indiana University, Bloomington"
+            .abbreviation("IU")
             .url(authority: "indiana.edu")
         
         
@@ -191,7 +201,7 @@ public struct UnitedStates: CollegeGroup {
         "Johns Hopkins University"
             .url(authority: "jhu.edu")
         
-        "JU: Johnson University"
+        "Johnson University"
             .url(authority: "johnsonu.edu")
         
         
@@ -200,13 +210,14 @@ public struct UnitedStates: CollegeGroup {
         "Keck Graduate Institute"
             .url(authority: "kgi.edu")
         
-        "KING: King University"
+        "King University"
+            .abbreviation("King")
             .url(authority: "king.edu")
         
         
         // #L
         
-        "LMU: Lincoln Memorial University"
+        "Lincoln Memorial University"
             .url(authority: "lmunet.edu")
         
         "Lousiana State University"
@@ -224,11 +235,11 @@ public struct UnitedStates: CollegeGroup {
         "Maryland Institute College of Art"
             .url(authority: "mica.edu")
         
-        "U of M: University of Memphis"
+        "University of Memphis"
+            .abbreviation("U of M")
             .url(authority: "memphis.edu")
         
-        "UM: University of Michigan"
-//            .secondaryCode(abbreviating: "U MICH")
+        "University of Michigan"
             .url(authority: "umich.edu")
         
         "Michigan State University"
@@ -243,7 +254,7 @@ public struct UnitedStates: CollegeGroup {
         "Massachusetts Institute of Technology"
             .url(authority: "mit.edu")
         
-        "UMW: University of Montana Western"
+        "University of Montana Western"
             .url(authority: "umwestern.edu")
         
         
@@ -258,7 +269,8 @@ public struct UnitedStates: CollegeGroup {
         "University of North Carolina"
             .url(authority: "unc.edu")
         
-        "NC A&T: North Carolina Agriculture & Technical State University"
+        "North Carolina Agriculture & Technical State University"
+            .abbreviation("NC A&T")
             .url(authority: "ncat.edu")
         
         "University of North Carolina, Asheville"
@@ -285,7 +297,8 @@ public struct UnitedStates: CollegeGroup {
         "North Carolina State University"
             .url(authority: "ncsu.edu")
         
-        "NU, NW, NWU: Northwestern University"
+        "Northwestern University"
+            .abbreviation("NU", "NW", "NWU")
             .url(authority: "northwestern.edu")
         
         "The New School"
@@ -295,20 +308,20 @@ public struct UnitedStates: CollegeGroup {
             .url(authority: "nyu.edu")
         
         "Ohio State University"
-//            .secondaryCode(abbreviating: "tosu")
+            .abbreviation("OSU", "TOSU")
             .url(authority: "osu.edu")
         
         "Oklahoma University"
             .url(authority: "ou.edu")
         
-        "PENN, U PENN: University of Pennsylvania"
-//            .secondaryCode(abbreviating: "u penn")
+        "University of Pennsylvania"
+            .abbreviation("Penn", "UPenn")
             .url(authority: "upenn.edu")
         
-        "PSU: Pennsylvania State University"
+        "Pennsylvania State University"
             .url(authority: "psu.edu")
         
-        "UR: University of Rochester"
+        "University of Rochester"
             .url(authority: "rochester.edu")
         
         
@@ -317,7 +330,7 @@ public struct UnitedStates: CollegeGroup {
         "Santa Clara University"
             .url(authority: "scu.edu")
         
-        "SAU: Southern Adventist University"
+        "Southern Adventist University"
             .url(authority: "southern.edu")
         
         "University of Southern California"
@@ -336,34 +349,37 @@ public struct UnitedStates: CollegeGroup {
             .url(authority: "utc.edu")
         
         "University of Tennessee, Knoxville"
-//            .secondaryCode(abbreviating: "tenn")
+            .abbreviation("UTK", "Tenn")
             .url(authority: "utk.edu")
         
         "University of Tennessee, Martin"
             .url(authority: "utm.edu")
         
-        "TSU: Tennessee State University"
+        "Tennessee State University"
             .url(authority: "tnstate.edu")
         
-        "TN TECH: Tennessee Tech"
+        "Tennessee Tech"
+            .abbreviation("TTU")
             .url(authority: "tntech.edu")
         
-        "T A&M, A&M, TAMU: Texas A&M"
+        "Texas A&M University"
+            .abbreviation("Texas A&M", "A&M")
             .url(authority: "tamu.edu")
         
         "Texas Christian University"
             .url(authority: "tcu.edu")
         
-        "UT: University of Texas at Austin"
+        "University of Texas at Austin"
+            .abbreviation("UT Austin", "UT", "Texas")
             .url(authority: "utexas.edu")
         
         "University of Texas at El Paso"
             .url(authority: "utep.edu")
         
-        "TU: Tusculum University"
+        "Tusculum University"
             .url(authority: "tusculum.edu")
         
-        "TJU: Tyler Junior College"
+        "Tyler Junior College"
             .url(authority: "tjc.edu")
         
         
@@ -375,9 +391,9 @@ public struct UnitedStates: CollegeGroup {
         "Utah State University"
             .url(authority: "usu.edu")
         
-        "USU E: Utah State University Eastern"
+        "Utah State University Eastern"
+            .abbreviation("USU Eastern")
             .url(authority: "eastern.usu.edu")
-//            .id("usu-eastern")
         
         // #V
         
@@ -387,10 +403,9 @@ public struct UnitedStates: CollegeGroup {
         "Virginia Commonwealth University"
             .url(authority: "vcu.edu")
         
-        "Virginia Tech"
-//            .secondaryCode(abbreviating: "vpi")
+        "Virginia Polytechnic Institute and State University"
+            .abbreviation("Virginia Tech", "VT", "VPI")
             .url(authority: "vt.edu")
-//            .alwaysUseDisplayCode()
         
         "Virginia Union University"
             .url(authority: "vuu.edu")
@@ -399,20 +414,20 @@ public struct UnitedStates: CollegeGroup {
         // #W
         
         "Wake Forest University"
-//            .secondaryCode(abbreviating: "wf")
+            .abbreviation("WFU", "WF")
             .url(authority: "wfu.edu")
         
-        "UW: University of Washington"
+        "University of Washington"
             .url(authority: "washington.edu")
         
-        "W&L: Washington & Lee University"
-//            .secondaryCode(abbreviating: "wlu")
+        "Washington & Lee University"
+            .abbreviation("W&L")
             .url(authority: "wlu.edu")
         
         "Western Carolina University"
             .url(authority: "wcu.edu")
         
-        "WLU: West Liberty University"
+        "West Liberty University"
             .url(authority: "westliberty.edu")
         
         "West Virginia University"
@@ -421,7 +436,8 @@ public struct UnitedStates: CollegeGroup {
         "West Virginia University at Parkersburg"
             .url(authority: "wvup.edu")
         
-        "WVU T, WVIT: West Virginia University Institute of Technology"
+        "West Virginia University Institute of Technology"
+            .abbreviation("WVU T", "WVIT", "WVU Beckley", "West Virginia Tech")
             .url("https://www.wvu.edu/wvutech/")
         
         "Winston-Salem State University"
@@ -430,7 +446,8 @@ public struct UnitedStates: CollegeGroup {
         
         // #Y
         
-        "YALE: Yale University"
+        "Yale University"
+            .abbreviation("Yale")
             .url(authority: "yale.edu")
         
         
