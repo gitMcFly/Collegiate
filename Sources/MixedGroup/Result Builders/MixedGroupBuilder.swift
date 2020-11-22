@@ -13,13 +13,21 @@ public struct MixedGroupBuilder<Element> {
         .init(subgroups: subgroups)
     }
     
+    public static func buildBlock() -> MixedGroup<Element> {
+        .init()
+    }
+    
 }
 
 public extension MixedGroupBuilder {
     static func buildExpression(_ element: Element) -> MixedGroup<Element> {
         .init(elements: [element])
     }
-        
+    
+    static func buildExpression(_ subgroup: MixedGroup<Element>) -> MixedGroup<Element> {
+        subgroup
+    }
+    
 }
 
 public extension MixedGroupBuilder where Element : ExpressibleByStringLiteral {
