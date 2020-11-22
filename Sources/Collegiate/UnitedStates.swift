@@ -5,8 +5,7 @@
 //  Created by Christopher Weems on 11/19/20.
 //
 
-import Foundation
-import Statehood
+import CollegeGroup
 
 public struct UnitedStates: CollegeGroup {
     public var body: Body {

@@ -26,6 +26,13 @@ let package = Package(
         .target(
             name: "Collegiate",
             dependencies: [
+                "CollegeGroup",
+                "MixedGroup",
+                .product(name: "Statehood", package: "Statehood"),
+            ]),
+        .target(
+            name: "CollegeGroup",
+            dependencies: [
                 "MixedGroup",
                 .product(name: "Statehood", package: "Statehood"),
             ]),

@@ -8,7 +8,7 @@
 import Foundation
 import Statehood
 
-extension College {
+public extension College {
     func url(authority: String, useHTTPS: Bool = true) -> Self {
         var new = self
         new[\.siteAuthority] = authority
@@ -24,7 +24,7 @@ extension College {
     
 }
 
-extension String {
+public extension String {
     func url(authority: String, useHTTPS: Bool = true) -> College {
         self.as(College.self)
             .url(authority: authority, useHTTPS: useHTTPS)
@@ -37,7 +37,7 @@ extension String {
     
 }
 
-extension College {
+public extension College {
     func state(_ state: State) -> Self {
         var new = self
         new[\.state] = state
@@ -46,7 +46,7 @@ extension College {
     
 }
 
-extension College {
+public extension College {
     fileprivate func _abbreviation<C>(_ abbreviations: C) -> Self where C: Collection, C.Element == String {
         var new = self
         new[\.abbreviations].append(contentsOf: abbreviations)
@@ -59,7 +59,7 @@ extension College {
     
 }
 
-extension String {
+public extension String {
     func abbreviation(_ abbreviations: String...) -> College {
         self.as(College.self)
             ._abbreviation(abbreviations)
