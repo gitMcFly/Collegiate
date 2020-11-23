@@ -31,38 +31,6 @@ extension PartialAddress: CustomStringConvertible {
     
 }
 
-
-// MARK: -
-
-extension PartialAddress {
-    public enum AdministrativeArea {
-        case state(_ state: State)
-        
-    }
-    
-}
-
-extension PartialAddress.AdministrativeArea {
-    var formattedTitle: String {
-        switch self {
-        case .state(let state):
-            return state.fullName
-            
-        }
-    }
-    
-}
-
-extension PartialAddress.AdministrativeArea {
-    public var state: State? {
-        switch self {
-        case .state(let state):
-            return state
-        }
-    }
-    
-}
-
 extension PartialAddress {
     public var state: State? {
         get { administrativeArea?.state }
