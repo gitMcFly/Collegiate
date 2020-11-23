@@ -1,19 +1,22 @@
 import XCTest
 @testable import Collegiate
+@testable import PartialAddress
 
 final class CollegiateTests: XCTestCase {
     static var allTests = [
-        ("testExample", testExample),
+        ("testCountryTitle", testCountryTitle),
     ]
     
 }
 
 extension CollegiateTests {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertTrue(!false)
+    func testCountryTitle() {
+        let usa = Country.unitedStatesOfAmerica
+        XCTAssertEqual(usa.formattedTitle, "United States of America")
+        
+        let australia = Country.australia
+        XCTAssertEqual(australia.formattedTitle, "Australia")
+        
     }
     
 }
