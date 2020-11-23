@@ -9,6 +9,7 @@ import Foundation
 import unstandard
 
 public protocol UniversitySystem: Identifiable {
+    var title: String { get }
     @UUIDResult var id: UUID { get }
     
 }

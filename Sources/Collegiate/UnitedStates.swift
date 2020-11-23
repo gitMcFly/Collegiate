@@ -719,6 +719,26 @@ public struct UnitedStates: CollegeGroup {
 }
 
 public extension UnitedStates.System {
+    @SingleResult var title: String {
+        switch self {
+        case .universityOfAlabama:
+            "University of Alabama"
+            
+        case .universityOfCalifornia:
+            "University of California"
+            
+        case .universityOfIllinois:
+            "University of Illinois"
+            
+        case .universityOfSouthCarolina:
+            "University of South Carolina"
+            
+        case .universityOfTennessee:
+            "University of Tennessee"
+            
+        }
+    }
+    
     @UUIDResult var id: UUID {
         switch self {
         case .universityOfAlabama:
