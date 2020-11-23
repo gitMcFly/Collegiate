@@ -17,6 +17,9 @@ let package = Package(
         .library(
             name: "CollegeGroup",
             targets: ["CollegeGroup"]),
+        .library(
+            name: "MixedGroup",
+            targets: ["MixedGroup"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
