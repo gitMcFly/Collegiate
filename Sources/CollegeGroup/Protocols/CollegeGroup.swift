@@ -49,12 +49,7 @@ public extension CollegeGroup {
 
 public extension CollegeGroup {
     func system<System>(_ system: System) -> some CollegeGroup where System : UniversitySystem {
-        AnyCollegeGroup {
-            ForEach(body[\.elements]) { college in
-                college.system(system)
-                
-            }
-        }
+        AnyCollegeGroup(colleges: body[\.elements].map { $0.system(system) })
     }
     
 }
