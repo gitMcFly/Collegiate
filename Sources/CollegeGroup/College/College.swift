@@ -7,6 +7,7 @@
 
 import Foundation
 import MixedGroup
+import PartialAddress
 import Statehood
 
 public struct College: ExpressibleByStringLiteral {
@@ -14,8 +15,7 @@ public struct College: ExpressibleByStringLiteral {
         public var title: String
         public var commonTitle: String?
         
-        public var city: String?
-        public var state: State?
+        public var address = PartialAddress()
         
         public var system: AnyUniversitySystem?
         

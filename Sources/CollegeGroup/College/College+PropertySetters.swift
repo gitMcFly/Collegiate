@@ -45,7 +45,7 @@ public extension String {
 public extension College {
     func city(_ city: String) -> Self {
         var new = self
-        new[\.city] = city
+        new[\.address.city] = city
         return new
     }
     
@@ -65,7 +65,7 @@ public extension String {
 public extension College {
     func state(_ state: State) -> Self {
         var new = self
-        new[\.state] = state
+        new[\.address.state] = state
         return new
     }
     
