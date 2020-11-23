@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Resultto
 import Statehood
 import unstandard
 
@@ -15,6 +16,16 @@ public struct PartialAddress {
     public var city: String?
     
     public init() { }
+    
+}
+
+extension PartialAddress {
+    @AllNil public var isEmpty: Bool {
+        country
+        administrativeArea
+        city
+        
+    }
     
 }
 
