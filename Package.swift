@@ -28,6 +28,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/apple/swift-algorithms", .upToNextMajor(from: "0.0.1")),
+        .package(url: "https://github.com/christopherweems/Resultto.git", .upToNextMajor(from: "0.0.1")),
         .package(url: "https://github.com/christopherweems/Statehood.git", .branch("main")),
         .package(url: "https://github.com/christopherweems/unstandard", .branch("main")),
     ],
@@ -57,6 +58,7 @@ let package = Package(
             name: "PartialAddress",
             dependencies: [
                 .product(name: "Algorithms", package: "swift-algorithms"),
+                .product(name: "Resultto", package: "Resultto"),
                 .product(name: "Statehood", package: "Statehood"),
                 .product(name: "unstandard", package: "unstandard"),
             ]),
