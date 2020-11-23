@@ -86,3 +86,15 @@ public extension String {
     }
     
 }
+
+
+//
+
+public extension College {
+    func system<System>(_ system: System) -> Self where System : UniversitySystem {
+        var new = self
+        new[\.systemID] = system.id
+        return new
+    }
+    
+}

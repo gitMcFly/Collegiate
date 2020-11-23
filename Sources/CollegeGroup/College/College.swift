@@ -16,6 +16,8 @@ public struct College: ExpressibleByStringLiteral {
         
         public var state: State?
         
+        public var systemID: AnyUniversitySystem.ID?
+        
         public var abbreviations: [String] = []
         
         public var siteAuthority: String?
