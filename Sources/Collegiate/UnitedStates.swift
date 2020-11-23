@@ -556,7 +556,8 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "vcu.edu")
             
             "Virginia Polytechnic Institute and State University"
-                .abbreviation("Virginia Tech", "VT", "VPI")
+                .commonTitle("Virginia Tech")
+                .abbreviation("VT", "VPI")
                 .url(authority: "vt.edu")
             
             "Virginia Union University"
