@@ -36,13 +36,15 @@ extension ForEach: CollegeGroup where Data.Element == College {
 // MARK: - Property Setters
 
 public extension CollegeGroup {
+    func city(_ city: String) -> some CollegeGroup {
+        AnyCollegeGroup(colleges: body[\.elements].map { $0.city(city) })
+    }
+    
+}
+
+public extension CollegeGroup {
     func state(_ state: State) -> some CollegeGroup {
-        AnyCollegeGroup {
-            ForEach(body[\.elements]) { college in
-                college.state(state)
-                
-            }
-        }
+        AnyCollegeGroup(colleges: body[\.elements].map { $0.state(state) })
     }
     
 }

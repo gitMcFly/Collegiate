@@ -8,6 +8,8 @@
 import Foundation
 import Statehood
 
+// MARK: - `.url(_:)`
+
 public extension College {
     func url(authority: String, useHTTPS: Bool = true) -> Self {
         var new = self
@@ -24,6 +26,7 @@ public extension College {
     
 }
 
+
 public extension String {
     func url(authority: String, useHTTPS: Bool = true) -> College {
         self.as(College.self)
@@ -37,6 +40,28 @@ public extension String {
     
 }
 
+// MARK: - `.city(_:)`
+
+public extension College {
+    func city(_ city: String) -> Self {
+        var new = self
+        new[\.city] = city
+        return new
+    }
+    
+}
+
+public extension String {
+    func city(_ city: String) -> College {
+        self.as(College.self)
+            .city(city)
+    }
+    
+}
+
+
+// MARK: - `.state(_:)`
+
 public extension College {
     func state(_ state: State) -> Self {
         var new = self
@@ -45,6 +70,9 @@ public extension College {
     }
     
 }
+
+
+// MARK: - `.abbreviation(_:)`
 
 public extension College {
     fileprivate func _abbreviation<C>(_ abbreviations: C) -> Self where C: Collection, C.Element == String {
@@ -68,7 +96,7 @@ public extension String {
 }
 
 
-//
+// MARK: - `.commonTitle(_:)`
 
 public extension College {
     func commonTitle(_ title: String) -> Self {
@@ -88,7 +116,7 @@ public extension String {
 }
 
 
-//
+// MARK: - `.system(_:)`
 
 public extension College {
     func system<System>(_ system: System) -> Self where System : UniversitySystem {

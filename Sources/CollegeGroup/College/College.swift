@@ -14,6 +14,7 @@ public struct College: ExpressibleByStringLiteral {
         public var title: String
         public var commonTitle: String?
         
+        public var city: String?
         public var state: State?
         
         public var system: AnyUniversitySystem?
