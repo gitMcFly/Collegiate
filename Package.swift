@@ -56,8 +56,9 @@ let package = Package(
         .target(
             name: "PartialAddress",
             dependencies: [
-                .product(name: "Statehood", package: "Statehood"),
                 .product(name: "Algorithms", package: "swift-algorithms"),
+                .product(name: "Statehood", package: "Statehood"),
+                .product(name: "unstandard", package: "unstandard"),
             ]),
         .testTarget(
             name: "CollegiateTests",

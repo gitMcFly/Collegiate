@@ -6,16 +6,34 @@
         "repositoryURL": "https://github.com/christopherweems/Statehood.git",
         "state": {
           "branch": "main",
-          "revision": "59cca9311a376a827a6e784e66d92ac27c38c1cc",
+          "revision": "68c41c64d3b4c2c1874d101f38d57f9809572fc6",
           "version": null
         }
       },
       {
+        "package": "swift-algorithms",
+        "repositoryURL": "https://github.com/apple/swift-algorithms",
+        "state": {
+          "branch": null,
+          "revision": "bb3bafeca0e164ece3403a9de646b7d38c07dd49",
+          "version": "0.0.2"
+        }
+      },
+      {
+        "package": "swift-numerics",
+        "repositoryURL": "https://github.com/apple/swift-numerics",
+        "state": {
+          "branch": null,
+          "revision": "6b24333510e9044cf4716a07bed65eeed6bc6393",
+          "version": "0.0.8"
+        }
+      },
+      {
         "package": "unstandard",
-        "repositoryURL": "https://github.com/christopherweems/unstandard.git",
+        "repositoryURL": "https://github.com/christopherweems/unstandard",
         "state": {
           "branch": "main",
-          "revision": "4c51b8a6a9fa5d99d99136c949be2fc15f20b880",
+          "revision": "2297f92e61cf4f17e367042eb080cb85b4623d78",
           "version": null
         }
       }
