@@ -7,6 +7,7 @@
 
 import Foundation
 import MixedGroup
+import PartialAddress
 import Statehood
 import unstandard
 
@@ -40,11 +41,12 @@ public extension CollegeGroup {
         AnyCollegeGroup(colleges: body[\.elements].map { $0.city(city) })
     }
     
-}
-
-public extension CollegeGroup {
     func state(_ state: State) -> some CollegeGroup {
         AnyCollegeGroup(colleges: body[\.elements].map { $0.state(state) })
+    }
+    
+    func country(_ country: Country) -> some CollegeGroup {
+        AnyCollegeGroup(colleges: body[\.elements].map { $0.country(country) })
     }
     
 }

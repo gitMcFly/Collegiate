@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import PartialAddress
 import Statehood
 
 // MARK: - `.url(_:)`
@@ -66,6 +67,18 @@ public extension College {
     func state(_ state: State) -> Self {
         var new = self
         new[\.address.state] = state
+        return new
+    }
+    
+}
+
+
+// MARK: - `.country(_:)`
+
+public extension College {
+    func country(_ country: Country) -> Self {
+        var new = self
+        new[\.address.country] = country
         return new
     }
     
