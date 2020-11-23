@@ -6,16 +6,31 @@
 //
 
 import CollegeGroup
+import Foundation
+import unstandard
 
 public struct UnitedStates: CollegeGroup {
+    public enum System: UniversitySystem {
+        case universityOfAlabama
+        case universityOfCalifornia
+        case universityOfIllinois
+        case universityOfTennessee
+        case universityOfSouthCarolina
+        
+    }
+    
     public var body: Body {
         Group {
-            "University of Alabama"
-                .abbreviation("UA", "ALA", "Bama")
-                .url(authority: "ua.edu")
-            
-            "University of Alabama at Birmingham"
-                .url(authority: "uab.edu")
+            Group {
+                "University of Alabama"
+                    .abbreviation("UA", "ALA", "Bama")
+                    .url(authority: "ua.edu")
+                
+                "University of Alabama at Birmingham"
+                    .url(authority: "uab.edu")
+                
+            }
+            .system(System.universityOfAlabama)
             
             "Auburn University"
                 .url(authority: "auburn.edu")
@@ -41,15 +56,19 @@ public struct UnitedStates: CollegeGroup {
         .state(.arkansas)
         
         Group {
-            "University of California, Berkeley"
-                .abbreviation("Cal", "UC Berkeley")
-                .url(authority: "berkeley.edu")
-            
-            "University of California, Los Angeles"
-                .url(authority: "ucla.edu")
-            
-            "University of California, San Francisco"
-                .url(authority: "ucsf.edu")
+            Group {
+                "University of California, Berkeley"
+                    .abbreviation("Cal", "UC Berkeley")
+                    .url(authority: "berkeley.edu")
+                
+                "University of California, Los Angeles"
+                    .url(authority: "ucla.edu")
+                
+                "University of California, San Francisco"
+                    .url(authority: "ucsf.edu")
+                
+            }
+            .system(System.universityOfCalifornia)
             
             "Keck Graduate Institute"
                 .url(authority: "kgi.edu")
@@ -127,6 +146,10 @@ public struct UnitedStates: CollegeGroup {
             "University of Chicago Booth School of Business"
                 .abbreviation("Booth", "Chicago Booth")
                 .url(authority: "chicagobooth.edu")
+            
+            "University of Illinois at Chicago"
+                .url(authority: "uic.edu")
+                .system(System.universityOfIllinois)
             
         }
         .state(.illinois)
@@ -380,6 +403,7 @@ public struct UnitedStates: CollegeGroup {
                         .url(authority: "uscupstate.edu")
                     
                 }
+                .system(System.universityOfSouthCarolina)
                 
                 "Winthrop University"
                     .url(authority: "winthrop.edu")
@@ -487,15 +511,19 @@ public struct UnitedStates: CollegeGroup {
             "Tusculum University"
                 .url(authority: "tusculum.edu")
             
-            "University of Tennessee, Chattanooga"
-                .url(authority: "utc.edu")
-            
-            "University of Tennessee, Knoxville"
-                .abbreviation("UTK", "Tenn")
-                .url(authority: "utk.edu")
-            
-            "University of Tennessee, Martin"
-                .url(authority: "utm.edu")
+            Group {
+                "University of Tennessee, Chattanooga"
+                    .url(authority: "utc.edu")
+                
+                "University of Tennessee, Knoxville"
+                    .abbreviation("UTK", "Tenn")
+                    .url(authority: "utk.edu")
+                
+                "University of Tennessee, Martin"
+                    .url(authority: "utm.edu")
+                
+            }
+            .system(System.universityOfTennessee)
             
             "Union University"
                 .url(authority: "uu.edu")
@@ -686,6 +714,29 @@ public struct UnitedStates: CollegeGroup {
     
     public init() {
         
+    }
+    
+}
+
+public extension UnitedStates.System {
+    @UUIDResult var id: UUID {
+        switch self {
+        case .universityOfAlabama:
+            (238, 250, 125, 159, 204, 249, 70, 91, 189, 81, 179, 78, 90, 225, 163, 58)
+            
+        case .universityOfCalifornia:
+            (25, 243, 163, 73, 166, 241, 69, 120, 169, 13, 57, 97, 3, 80, 53, 173)
+            
+        case .universityOfIllinois:
+            (21, 40, 74, 220, 229, 124, 64, 153, 132, 194, 57, 26, 234, 226, 189, 117)
+            
+        case .universityOfSouthCarolina:
+            (71, 121, 134, 135, 160, 58, 76, 156, 186, 121, 73, 250, 3, 180, 106, 153)
+            
+        case .universityOfTennessee:
+            (42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42)
+            
+        }
     }
     
 }
