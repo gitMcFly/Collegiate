@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import unstandard
 
-public protocol UniversitySystem: Identifiable where ID == UUID {
+public protocol UniversitySystem: Identifiable {
+    @UUIDResult var id: UUID { get }
     
 }
