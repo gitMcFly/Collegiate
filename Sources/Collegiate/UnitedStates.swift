@@ -194,7 +194,7 @@ public struct UnitedStates: CollegeGroup {
         
         Group {
             "Appalachian State University"
-                .abbreviation("App State", "App", "ASU")
+                .abbreviation("ASU", "App State", "App")
                 .url(authority: "appstate.edu")
             
             "Eastern Carolina University"
