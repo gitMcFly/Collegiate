@@ -66,3 +66,23 @@ public extension String {
     }
     
 }
+
+
+//
+
+public extension College {
+    func commonTitle(_ title: String) -> Self {
+        var new = self
+        new[\.commonTitle] = title
+        return new
+    }
+    
+}
+
+public extension String {
+    func commonTitle(_ title: String) -> College {
+        self.as(College.self)
+            .commonTitle(title)
+    }
+    
+}

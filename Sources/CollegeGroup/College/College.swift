@@ -12,6 +12,8 @@ import Statehood
 public struct College: ExpressibleByStringLiteral {
     public struct Properties {
         public var title: String
+        public var commonTitle: String?
+        
         public var state: State?
         
         public var abbreviations: [String] = []
