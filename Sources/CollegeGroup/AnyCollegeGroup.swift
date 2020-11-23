@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import MixedGroup
 import unstandard
 
 public struct AnyCollegeGroup: CollegeGroup {
@@ -23,6 +24,11 @@ public struct AnyCollegeGroup: CollegeGroup {
             _body = Memoized { other.body }
             
         }
+    }
+    
+    public init(colleges: [College]) {
+        _body = Memoized(wrappedValue: MixedGroup(elements: colleges))
+        
     }
     
 }
