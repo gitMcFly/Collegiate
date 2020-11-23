@@ -21,6 +21,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-algorithms", .upToNextMajor(from: "0.0.1")),
         .package(url: "https://github.com/christopherweems/Statehood.git", .branch("main")),
     ],
     targets: [
@@ -38,6 +39,7 @@ let package = Package(
             dependencies: [
                 "MixedGroup",
                 .product(name: "Statehood", package: "Statehood"),
+                .product(name: "Algorithms", package: "swift-algorithms"),
             ]),
         .target(
             name: "MixedGroup",
