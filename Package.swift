@@ -20,6 +20,9 @@ let package = Package(
         .library(
             name: "MixedGroup",
             targets: ["MixedGroup"]),
+        .library(
+            name: "PartialAddress",
+            targets: ["PartialAddress"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -42,6 +45,7 @@ let package = Package(
             name: "CollegeGroup",
             dependencies: [
                 "MixedGroup",
+                "PartialAddress",
                 .product(name: "Statehood", package: "Statehood"),
                 .product(name: "Algorithms", package: "swift-algorithms"),
                 .product(name: "unstandard", package: "unstandard"),
@@ -49,6 +53,12 @@ let package = Package(
         .target(
             name: "MixedGroup",
             dependencies: []),
+        .target(
+            name: "PartialAddress",
+            dependencies: [
+                .product(name: "Statehood", package: "Statehood"),
+                .product(name: "Algorithms", package: "swift-algorithms"),
+            ]),
         .testTarget(
             name: "CollegiateTests",
             dependencies: ["Collegiate"]),
