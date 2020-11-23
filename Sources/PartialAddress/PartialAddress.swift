@@ -7,6 +7,7 @@
 
 import Foundation
 import Statehood
+import unstandard
 
 public struct PartialAddress {
     public var country: Country?
@@ -17,10 +18,37 @@ public struct PartialAddress {
     
 }
 
+extension PartialAddress: CustomStringConvertible {
+    public var description: String {
+        Array<String?> {
+            city
+            administrativeArea?.formattedTitle
+            country?.formattedTitle
+        }
+        .compactMap { $0 }
+        .joined(separator: ", ")
+    }
+    
+}
+
+
+// MARK: -
+
 extension PartialAddress {
     public enum AdministrativeArea {
         case state(_ state: State)
         
+    }
+    
+}
+
+extension PartialAddress.AdministrativeArea {
+    var formattedTitle: String {
+        switch self {
+        case .state(let state):
+            return state.fullName
+            
+        }
     }
     
 }
