@@ -70,7 +70,7 @@ public struct UnitedStates: CollegeGroup {
                     .url(authority: "berkeley.edu")
                 
                 "University of California, Los Angeles"
-                    .city("Westwood, Los Angeles")
+                    .city("Los Angeles", neighborhood: "Westwood")
                     .url(authority: "ucla.edu")
                 
                 "University of California, San Francisco"
@@ -85,7 +85,7 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "kgi.edu")
             
             "Loyola Marymount University"
-                .city("Westchester, Los Angeles")
+                .city("Los Angeles", neighborhood: "Westchester")
                 .url(authority: "lmu.edu")
             
             "Santa Clara University"
