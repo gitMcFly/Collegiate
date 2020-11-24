@@ -387,6 +387,15 @@ public struct UnitedStates: CollegeGroup {
         .state(.michigan)
         
         Group {
+            "The University of Mississippi"
+                .abbreviation("Ole Miss", "Miss")
+                .city("University")
+                .url(authority: "olemiss.edu")
+            
+        }
+        .state(.mississippi)
+        
+        Group {
             "University of Montana Western"
                 .city("Dillon")
                 .url(authority: "umwestern.edu")
