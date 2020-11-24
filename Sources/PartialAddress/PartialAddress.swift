@@ -14,6 +14,7 @@ public struct PartialAddress {
     public var country: Country?
     public var administrativeArea: AdministrativeArea?
     public var city: String?
+    public var neighborhood: String?
     
     public init() { }
     
@@ -24,6 +25,7 @@ extension PartialAddress {
         country
         administrativeArea
         city
+        neighborhood
         
     }
     
@@ -32,6 +34,11 @@ extension PartialAddress {
 extension PartialAddress: CustomStringConvertible {
     public var description: String {
         Array {
+            if let neighborhood = neighborhood {
+                neighborhood
+                
+            }
+            
             if let city = city {
                 city
                 
