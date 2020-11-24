@@ -18,9 +18,6 @@ let package = Package(
             name: "CollegeGroup",
             targets: ["CollegeGroup"]),
         .library(
-            name: "MixedGroup",
-            targets: ["MixedGroup"]),
-        .library(
             name: "PartialAddress",
             targets: ["PartialAddress"]),
     ],
@@ -28,8 +25,9 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/apple/swift-algorithms", .upToNextMajor(from: "0.0.1")),
-        .package(url: "https://github.com/christopherweems/Resultto.git", .upToNextMajor(from: "0.0.1")),
-        .package(url: "https://github.com/christopherweems/Statehood.git", .branch("main")),
+        .package(url: "https://github.com/christopherweems/Resultto", .upToNextMajor(from: "0.0.1")),
+        .package(url: "https://github.com/christopherweems/MixedGroup", .branch("main")),
+        .package(url: "https://github.com/christopherweems/Statehood", .branch("main")),
         .package(url: "https://github.com/christopherweems/unstandard", .branch("main")),
     ],
     targets: [
@@ -45,15 +43,12 @@ let package = Package(
         .target(
             name: "CollegeGroup",
             dependencies: [
-                "MixedGroup",
                 "PartialAddress",
-                .product(name: "Statehood", package: "Statehood"),
                 .product(name: "Algorithms", package: "swift-algorithms"),
+                .product(name: "MixedGroup", package: "MixedGroup"),
+                .product(name: "Statehood", package: "Statehood"),
                 .product(name: "unstandard", package: "unstandard"),
             ]),
-        .target(
-            name: "MixedGroup",
-            dependencies: []),
         .target(
             name: "PartialAddress",
             dependencies: [
