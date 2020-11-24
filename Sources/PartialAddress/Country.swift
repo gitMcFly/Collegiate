@@ -11,6 +11,7 @@ import unstandard
 
 public enum Country {
     case australia
+    case malaysia
     case unitedStatesOfAmerica
     
 }
