@@ -31,12 +31,24 @@ extension PartialAddress {
 
 extension PartialAddress: CustomStringConvertible {
     public var description: String {
-        Array<String?> {
-            city
-            administrativeArea?.formattedTitle
-            country?.formattedTitle
+        Array {
+            if let city = city {
+                city
+                
+            }
+            
+            if let administrativeArea = administrativeArea?.formattedTitle,
+               city?.contains(administrativeArea) != true {
+                administrativeArea
+                
+            }
+            
+            if let country = country?.formattedTitle {
+                country
+                
+            }
+            
         }
-        .compactMap { $0 }
         .joined(separator: ", ")
     }
     
