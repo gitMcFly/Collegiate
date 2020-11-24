@@ -44,18 +44,25 @@ public extension String {
 // MARK: - `.city(_:)`
 
 public extension College {
-    func city(_ city: String) -> Self {
+    func city(_ city: String, neighborhood: String? = nil) -> Self {
         var new = self
+        
         new[\.address.city] = city
+        
+        if let neighborhood = neighborhood {
+            new[\.address.neighborhood] = neighborhood
+            
+        }
+        
         return new
     }
     
 }
 
 public extension String {
-    func city(_ city: String) -> College {
+    func city(_ city: String, neighborhood: String? = nil) -> College {
         self.as(College.self)
-            .city(city)
+            .city(city, neighborhood: neighborhood)
     }
     
 }
