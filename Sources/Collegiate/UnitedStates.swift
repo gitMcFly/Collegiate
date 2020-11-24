@@ -122,7 +122,8 @@ public struct UnitedStates: CollegeGroup {
                 .city("Oviedo")
                 .url(authority: "ucf.edu")
             
-            "UF, UFL: University of Florida"
+            "University of Florida"
+                .abbreviation("UF", "UFL")
                 .city("Gainesville")
                 .url(authority: "ufl.edu")
             
