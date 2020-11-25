@@ -26,7 +26,7 @@ let package = Package(
         // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/apple/swift-algorithms", .upToNextMajor(from: "0.0.1")),
         .package(url: "https://github.com/christopherweems/Resultto", .upToNextMajor(from: "0.0.1")),
-        .package(url: "https://github.com/christopherweems/MixedGroup", .branch("main")),
+        .package(url: "https://github.com/docmcgit/MixedGroup", .upToNextMajor(from: "0.0.1")),
         .package(url: "https://github.com/christopherweems/Statehood", .branch("main")),
         .package(url: "https://github.com/christopherweems/unstandard", .branch("main")),
     ],
