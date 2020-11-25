@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "MixedGroup",
-        "repositoryURL": "https://github.com/christopherweems/MixedGroup",
+        "repositoryURL": "https://github.com/docmcgit/MixedGroup",
         "state": {
-          "branch": "main",
-          "revision": "4c4af303fbc14cb6070af59ccc730ffddec8744f",
-          "version": null
+          "branch": null,
+          "revision": "3234f28234bb569effcfb665ef19e5f1d2b65dd1",
+          "version": "0.0.1"
         }
       },
       {
@@ -23,9 +23,9 @@
         "package": "Statehood",
         "repositoryURL": "https://github.com/christopherweems/Statehood",
         "state": {
-          "branch": "main",
-          "revision": "68c41c64d3b4c2c1874d101f38d57f9809572fc6",
-          "version": null
+          "branch": null,
+          "revision": "af652ddf62ddfab0d571f7b7dd658eecfc70d522",
+          "version": "0.0.1"
         }
       },
       {
@@ -50,9 +50,9 @@
         "package": "unstandard",
         "repositoryURL": "https://github.com/christopherweems/unstandard",
         "state": {
-          "branch": "main",
+          "branch": null,
           "revision": "b3acfdbb35ba86ad4b7024f6c0a62a3267e93208",
-          "version": null
+          "version": "0.0.6"
         }
       }
     ]
