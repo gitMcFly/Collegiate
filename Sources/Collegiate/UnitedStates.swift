@@ -30,11 +30,9 @@ public struct UnitedStates: CollegeGroup {
                     .url(authority: "ua.edu")
                 
                 "University of Alabama at Birmingham"
-                    .city("Birmingham")
                     .url(authority: "uab.edu")
                 
                 "University of Alabama in Huntsville"
-                    .city("Huntsville")
                     .url(authority: "uah.edu")
                 
             }
@@ -70,16 +68,34 @@ public struct UnitedStates: CollegeGroup {
         Group {
             Group {
                 "University of California, Berkeley"
-                    .abbreviation("Cal", "UC Berkeley")
-                    .city("Berkeley")
+                    .abbreviation("UC Berkeley", "Cal")
                     .url(authority: "berkeley.edu")
+                
+                "University of California, Davis"
+                    .abbreviation("UC Davis", "UCD")
+                    .url(authority: "ucdavis.edu")
+                
+                "University of California, Irvine"
+                    .abbreviation("UCI", "UC Irvine")
+                    .url(authority: "uci.edu")
                 
                 "University of California, Los Angeles"
                     .city("Los Angeles", neighborhood: "Westwood")
                     .url(authority: "ucla.edu")
                 
+                "University of California, Merced"
+                    .abbreviation("UC Merced")
+                    .url(authority: "ucmerced.edu")
+                
+                "University of California, Riverside"
+                    .abbreviation("UCR", "UC Riverside")
+                    .url(authority: "ucr.edu")
+                
+                "University of California, San Diego"
+                    .abbreviation("UC San Diego", "UCSD")
+                    .url(authority: "ucsd.edu")
+                
                 "University of California, San Francisco"
-                    .city("San Francisco")
                     .url(authority: "ucsf.edu")
                 
             }
@@ -697,17 +713,14 @@ public struct UnitedStates: CollegeGroup {
             Group {
                 "University of Texas at Austin"
                     .abbreviation("UT Austin", "UT", "Texas")
-                    .city("Austin")
                     .url(authority: "utexas.edu")
                 
                 "University of Texas at Arlington"
                     .url(authority: "uta.edu")
                 
                 "University of Texas at El Paso"
-                    .city("El Paso")
                     .url(authority: "utep.edu")
                 
-                ""
             }
             
         }
