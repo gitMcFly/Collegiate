@@ -1,3 +1,3 @@
 # Collegiate
 
-A directory of University and Colleges on planet earth.
+A directory of universities, colleges, and other institutions of higher learning.
