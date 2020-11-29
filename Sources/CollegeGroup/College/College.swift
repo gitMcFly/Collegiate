@@ -31,7 +31,13 @@ public struct College: ExpressibleByStringLiteral {
     private var properties: Properties
     
     public init(stringLiteral value: StringLiteralType) {
-        self.properties = Properties(title: value)
+        let (title, city) = Self.title(from: value)
+        self.properties = Properties(title: title)
+        
+        if let city = city {
+            self.properties.address.city = city
+            
+        }
         
     }
     
@@ -57,6 +63,30 @@ public typealias CollegeGroupBuilder = MixedGroupBuilder<College>
 public extension College.Properties {
     var primaryAbbreviation: String? {
         abbreviations.first ?? title.initials
+    }
+    
+}
+
+
+// MARK: -
+
+fileprivate extension College {
+    static let citySeparators = [", ", " at ", " in "]
+    
+    static func title(from stringValue: String) -> (title: String, city: String?) {
+        guard let citySeparator = citySeparators.first(where: stringValue.contains) else {
+            return (stringValue, nil)
+        }
+        
+        let components = stringValue.split(separator: citySeparator)
+        
+        switch components.count {
+        case 2:
+            return (stringValue, components[1])
+            
+        default:
+            return (stringValue, nil)
+        }
     }
     
 }

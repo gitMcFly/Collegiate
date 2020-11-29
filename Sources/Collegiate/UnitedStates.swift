@@ -16,7 +16,9 @@ public struct UnitedStates: CollegeGroup {
         case universityOfNorthCarolina
         case universityOfIllinois
         case universityOfTennessee
+        case universityOfTexas
         case universityOfSouthCarolina
+        case westVirginiaUniversity
         
     }
     
@@ -29,8 +31,10 @@ public struct UnitedStates: CollegeGroup {
                     .url(authority: "ua.edu")
                 
                 "University of Alabama at Birmingham"
-                    .city("Birmingham")
                     .url(authority: "uab.edu")
+                
+                "University of Alabama in Huntsville"
+                    .url(authority: "uah.edu")
                 
             }
             .system(System.universityOfAlabama)
@@ -65,16 +69,34 @@ public struct UnitedStates: CollegeGroup {
         Group {
             Group {
                 "University of California, Berkeley"
-                    .abbreviation("Cal", "UC Berkeley")
-                    .city("Berkeley")
+                    .abbreviation("UC Berkeley", "Cal")
                     .url(authority: "berkeley.edu")
+                
+                "University of California, Davis"
+                    .abbreviation("UC Davis", "UCD")
+                    .url(authority: "ucdavis.edu")
+                
+                "University of California, Irvine"
+                    .abbreviation("UCI", "UC Irvine")
+                    .url(authority: "uci.edu")
                 
                 "University of California, Los Angeles"
                     .city("Los Angeles", neighborhood: "Westwood")
                     .url(authority: "ucla.edu")
                 
+                "University of California, Merced"
+                    .abbreviation("UC Merced")
+                    .url(authority: "ucmerced.edu")
+                
+                "University of California, Riverside"
+                    .abbreviation("UCR", "UC Riverside")
+                    .url(authority: "ucr.edu")
+                
+                "University of California, San Diego"
+                    .abbreviation("UC San Diego", "UCSD")
+                    .url(authority: "ucsd.edu")
+                
                 "University of California, San Francisco"
-                    .city("San Francisco")
                     .url(authority: "ucsf.edu")
                 
             }
@@ -636,18 +658,26 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "tusculum.edu")
             
             Group {
-                "University of Tennessee, Chattanooga"
+                "University of Tennessee at Chattanooga"
                     .city("Chattanooga")
                     .url(authority: "utc.edu")
+                
+                "University of Tennessee Health Science Center"
+                    .city("Memphis")
+                    .url(authority: "uthsc.edu")
                 
                 "University of Tennessee, Knoxville"
                     .abbreviation("UTK", "Tenn")
                     .city("Knoxville")
                     .url(authority: "utk.edu")
                 
-                "University of Tennessee, Martin"
+                "University of Tennessee at Martin"
                     .city("Martin")
                     .url(authority: "utm.edu")
+                
+                "University of Tennessee Space Institute"
+                    .city("Tullahoma")
+                    .url(authority: "utsi.edu")
                 
             }
             .system(System.universityOfTennessee)
@@ -681,14 +711,18 @@ public struct UnitedStates: CollegeGroup {
                 .city("Tyler")
                 .url(authority: "tjc.edu")
             
-            "University of Texas at Austin"
-                .abbreviation("UT Austin", "UT", "Texas")
-                .city("Austin")
-                .url(authority: "utexas.edu")
-            
-            "University of Texas at El Paso"
-                .city("El Paso")
-                .url(authority: "utep.edu")
+            Group {
+                "University of Texas at Austin"
+                    .abbreviation("UT Austin", "UT", "Texas")
+                    .url(authority: "utexas.edu")
+                
+                "University of Texas at Arlington"
+                    .url(authority: "uta.edu")
+                
+                "University of Texas at El Paso"
+                    .url(authority: "utep.edu")
+                
+            }
             
         }
         .state(.texas)
@@ -823,8 +857,6 @@ public struct UnitedStates: CollegeGroup {
             
             "Pierpont Community and Technical College"
             
-            "Potomac State College of West Virginia University"
-            
             "Salem University"
                 .city("Salem")
                 .url(authority: "salemu.edu")
@@ -843,6 +875,7 @@ public struct UnitedStates: CollegeGroup {
             
             "West Virginia Northern Community College"
                 .city("Wheeling")
+                .url(authority: "wvncc.edu")
             
             "West Virginia School of Osteopathic Medicine"
             
@@ -850,18 +883,25 @@ public struct UnitedStates: CollegeGroup {
                 .city("Institute")
                 .url(authority: "wvstateu.edu")
             
-            "West Virginia University"
-                .city("Morgantown")
-                .url(authority: "wvu.edu")
+            Group {
+                "West Virginia University"
+                    .city("Morgantown")
+                    .url(authority: "wvu.edu")
+                
+                "West Virginia University Institute of Technology"
+                    .abbreviation("WVU Tech", "WVIT", "WVU Beckley", "West Virginia Tech")
+                    .city("Beckley")
+                    .url("https://www.wvu.edu/wvutech/")
+                
+                "WVU Potomac State College"
+                    .url(authority: "potomacstatecollege.edu")
+                
+            }
+            .system(System.westVirginiaUniversity)
             
             "West Virginia University at Parkersburg"
                 .city("Parkersburg")
                 .url(authority: "wvup.edu")
-            
-            "West Virginia University Institute of Technology"
-                .abbreviation("WVU Tech", "WVIT", "WVU Beckley", "West Virginia Tech")
-                .city("Beckley")
-                .url("https://www.wvu.edu/wvutech/")
             
             "West Virginia Wesleyan College"
                 .city("Buckhannon")
@@ -911,6 +951,12 @@ public extension UnitedStates.System {
         case .universityOfTennessee:
             "University of Tennessee"
             
+        case .universityOfTexas:
+            "University of Texas"
+            
+        case .westVirginiaUniversity:
+            "West Virginia University"
+            
         }
     }
     
@@ -933,6 +979,12 @@ public extension UnitedStates.System {
             
         case .universityOfTennessee:
             (42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42)
+            
+        case .universityOfTexas:
+            (233, 11, 227, 198, 95, 156, 76, 173, 136, 93, 88, 213, 146, 25, 16, 220)
+            
+        case .westVirginiaUniversity:
+            (31, 85, 152, 235, 251, 236, 77, 131, 189, 235, 180, 60, 238, 142, 119, 198)
             
         }
     }

@@ -1,3 +1,3 @@
 # Collegiate
 
-A description of this package.
+A directory of universities, colleges, and other institutions of higher learning.
