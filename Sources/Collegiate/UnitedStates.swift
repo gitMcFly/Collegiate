@@ -18,6 +18,7 @@ public struct UnitedStates: CollegeGroup {
         case universityOfTennessee
         case universityOfTexas
         case universityOfSouthCarolina
+        case westVirginiaUniversity
         
     }
     
@@ -856,8 +857,6 @@ public struct UnitedStates: CollegeGroup {
             
             "Pierpont Community and Technical College"
             
-            "Potomac State College of West Virginia University"
-            
             "Salem University"
                 .city("Salem")
                 .url(authority: "salemu.edu")
@@ -876,6 +875,7 @@ public struct UnitedStates: CollegeGroup {
             
             "West Virginia Northern Community College"
                 .city("Wheeling")
+                .url(authority: "wvncc.edu")
             
             "West Virginia School of Osteopathic Medicine"
             
@@ -883,9 +883,16 @@ public struct UnitedStates: CollegeGroup {
                 .city("Institute")
                 .url(authority: "wvstateu.edu")
             
-            "West Virginia University"
-                .city("Morgantown")
-                .url(authority: "wvu.edu")
+            Group {
+                "West Virginia University"
+                    .city("Morgantown")
+                    .url(authority: "wvu.edu")
+                
+                "WVU Potomac State College"
+                    .url(authority: "potomacstatecollege.edu")
+                
+            }
+            .system(System.westVirginiaUniversity)
             
             "West Virginia University at Parkersburg"
                 .city("Parkersburg")
@@ -947,6 +954,9 @@ public extension UnitedStates.System {
         case .universityOfTexas:
             "University of Texas"
             
+        case .westVirginiaUniversity:
+            "West Virginia University"
+            
         }
     }
     
@@ -972,6 +982,9 @@ public extension UnitedStates.System {
             
         case .universityOfTexas:
             (233, 11, 227, 198, 95, 156, 76, 173, 136, 93, 88, 213, 146, 25, 16, 220)
+            
+        case .westVirginiaUniversity:
+            (31, 85, 152, 235, 251, 236, 77, 131, 189, 235, 180, 60, 238, 142, 119, 198)
             
         }
     }
