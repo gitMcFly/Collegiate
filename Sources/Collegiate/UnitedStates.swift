@@ -16,6 +16,7 @@ public struct UnitedStates: CollegeGroup {
         case universityOfNorthCarolina
         case universityOfIllinois
         case universityOfTennessee
+        case universityOfTexas
         case universityOfSouthCarolina
         
     }
@@ -31,6 +32,10 @@ public struct UnitedStates: CollegeGroup {
                 "University of Alabama at Birmingham"
                     .city("Birmingham")
                     .url(authority: "uab.edu")
+                
+                "University of Alabama in Huntsville"
+                    .city("Huntsville")
+                    .url(authority: "uah.edu")
                 
             }
             .system(System.universityOfAlabama)
@@ -636,18 +641,26 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "tusculum.edu")
             
             Group {
-                "University of Tennessee, Chattanooga"
+                "University of Tennessee at Chattanooga"
                     .city("Chattanooga")
                     .url(authority: "utc.edu")
+                
+                "University of Tennessee Health Science Center"
+                    .city("Memphis")
+                    .url(authority: "uthsc.edu")
                 
                 "University of Tennessee, Knoxville"
                     .abbreviation("UTK", "Tenn")
                     .city("Knoxville")
                     .url(authority: "utk.edu")
                 
-                "University of Tennessee, Martin"
+                "University of Tennessee at Martin"
                     .city("Martin")
                     .url(authority: "utm.edu")
+                
+                "University of Tennessee Space Institute"
+                    .city("Tullahoma")
+                    .url(authority: "utsi.edu")
                 
             }
             .system(System.universityOfTennessee)
@@ -681,14 +694,21 @@ public struct UnitedStates: CollegeGroup {
                 .city("Tyler")
                 .url(authority: "tjc.edu")
             
-            "University of Texas at Austin"
-                .abbreviation("UT Austin", "UT", "Texas")
-                .city("Austin")
-                .url(authority: "utexas.edu")
-            
-            "University of Texas at El Paso"
-                .city("El Paso")
-                .url(authority: "utep.edu")
+            Group {
+                "University of Texas at Austin"
+                    .abbreviation("UT Austin", "UT", "Texas")
+                    .city("Austin")
+                    .url(authority: "utexas.edu")
+                
+                "University of Texas at Arlington"
+                    .url(authority: "uta.edu")
+                
+                "University of Texas at El Paso"
+                    .city("El Paso")
+                    .url(authority: "utep.edu")
+                
+                ""
+            }
             
         }
         .state(.texas)
@@ -911,6 +931,9 @@ public extension UnitedStates.System {
         case .universityOfTennessee:
             "University of Tennessee"
             
+        case .universityOfTexas:
+            "University of Texas"
+            
         }
     }
     
@@ -933,6 +956,9 @@ public extension UnitedStates.System {
             
         case .universityOfTennessee:
             (42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42)
+            
+        case .universityOfTexas:
+            (233, 11, 227, 198, 95, 156, 76, 173, 136, 93, 88, 213, 146, 25, 16, 220)
             
         }
     }
