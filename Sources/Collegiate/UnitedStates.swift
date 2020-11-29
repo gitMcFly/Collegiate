@@ -888,6 +888,11 @@ public struct UnitedStates: CollegeGroup {
                     .city("Morgantown")
                     .url(authority: "wvu.edu")
                 
+                "West Virginia University Institute of Technology"
+                    .abbreviation("WVU Tech", "WVIT", "WVU Beckley", "West Virginia Tech")
+                    .city("Beckley")
+                    .url("https://www.wvu.edu/wvutech/")
+                
                 "WVU Potomac State College"
                     .url(authority: "potomacstatecollege.edu")
                 
@@ -897,11 +902,6 @@ public struct UnitedStates: CollegeGroup {
             "West Virginia University at Parkersburg"
                 .city("Parkersburg")
                 .url(authority: "wvup.edu")
-            
-            "West Virginia University Institute of Technology"
-                .abbreviation("WVU Tech", "WVIT", "WVU Beckley", "West Virginia Tech")
-                .city("Beckley")
-                .url("https://www.wvu.edu/wvutech/")
             
             "West Virginia Wesleyan College"
                 .city("Buckhannon")
