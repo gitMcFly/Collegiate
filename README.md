@@ -1,3 +1,3 @@
 # Collegiate
 
-A description of this package.
+A directory of University and Colleges on planet earth.
