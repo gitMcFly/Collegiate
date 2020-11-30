@@ -7,7 +7,7 @@
 
 import unstandard
 
-public enum StudentNewspaper {
+public enum StudentNewspaper: CaseIterable {
     case dailyBeacon
     case dailyTexan
     case msuExponent
