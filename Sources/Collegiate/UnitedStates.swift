@@ -9,8 +9,6 @@ import CollegeGroup
 import Foundation
 import unstandard
 
-internal typealias _USSystemGroup = SystemGroup<UnitedStates.System>
-
 public struct UnitedStates: CollegeGroup {
     public enum System: UniversitySystem {
         case universityOfAlabama
@@ -23,8 +21,6 @@ public struct UnitedStates: CollegeGroup {
         case westVirginiaUniversity
         
     }
-    
-    internal typealias SystemGroup = _USSystemGroup
     
     public var body: Body {
         StateGroup(.alabama) {
@@ -889,6 +885,13 @@ public struct UnitedStates: CollegeGroup {
     public init() {
         
     }
+    
+}
+
+internal typealias _USSystemGroup = SystemGroup<UnitedStates.System>
+
+extension UnitedStates {
+    internal typealias SystemGroup = _USSystemGroup
     
 }
 
