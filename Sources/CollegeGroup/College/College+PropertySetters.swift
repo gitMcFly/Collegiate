@@ -8,6 +8,7 @@
 import Foundation
 import PartialAddress
 import Statehood
+import StudentNewspaper
 
 // MARK: - `.url(_:)`
 
@@ -143,6 +144,30 @@ public extension College {
         var new = self
         new[\.system] = AnyUniversitySystem(other: system)
         return new
+    }
+    
+}
+
+
+// MARK: - `.newspaper(_:)`
+
+public extension College {
+    func newspaper(_ newspapers: StudentNewspaper...) -> Self {
+        _newspapers(newspapers)
+    }
+    
+    fileprivate func _newspapers(_ newspapers: [StudentNewspaper]) -> Self {
+        var new = self
+        new[\.newspapers].append(contentsOf: newspapers)
+        return new
+    }
+    
+}
+
+public extension String {
+    func newspaper(_ newspapers: StudentNewspaper...) -> College {
+        self.as(College.self)
+            ._newspapers(newspapers)
     }
     
 }

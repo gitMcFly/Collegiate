@@ -11,6 +11,7 @@ import unstandard
 
 public struct UnitedStates: CollegeGroup {
     public enum System: UniversitySystem {
+        case montanaUniversity
         case universityOfAlabama
         case universityOfCalifornia
         case universityOfNorthCarolina
@@ -387,9 +388,129 @@ public struct UnitedStates: CollegeGroup {
         }
         
         StateGroup(.montana) {
-            "University of Montana Western"
-                .city("Dillon")
-                .url(authority: "umwestern.edu")
+            SystemGroup(.montanaUniversity) {
+                Group { // University of Montana
+                    "University of Montana"
+                        .abbreviation("UM", "UMT")
+                        .city("Missoula")
+                        .url(authority: "umt.edu")
+                    
+                    "Missoula College"
+                        .city("Missoula")
+                        .url(authority: "mc.umt.edu")
+                    
+                    "University of Montana Western"
+                        .city("Dillon")
+                        .url(authority: "umwestern.edu")
+                    
+                    "Highlands College of Montana Tech"
+                        .city("Butte")
+                        .url("https://www.mtech.edu/highlands/index.html")
+                    
+                    "Montana Technological University"
+                        .city("Butte")
+                        .url(authority: "mtech.edu")
+                    
+                    "Helena College"
+                        .city("Helena")
+                        .url(authority: "helenacollege.edu")
+                    
+                    "Bitterroot College"
+                        .city("Hamilton")
+                        .url("http://www.umt.edu/bitterroot-college/")
+                    
+                }
+                
+                Group { // Montana State
+                    "Montana State University"
+                        .city("Bozeman")
+                        .newspaper(.msuExponent)
+                        .url(authority: "montana.edu")
+                    
+                    "Gallatin College"
+                        .city("Bozeman")
+                        .url(authority: "gallatin.montana.edu")
+                    
+                    "Montana State University Billings"
+                        .city("Billings")
+                        .url(authority: "msubillings.edu")
+                    
+                    "City College at Montana State University Billings"
+                        .city("Billings")
+                        .url("https://www.msubillings.edu/citycollege/index.htm")
+                                        
+                    "Montana State University Northern"
+                        .abbreviation("MSU Northern", "MSUN")
+                        .city("Havre")
+                        .url(authority: "msun.edu")
+                    
+                    "Great Falls College"
+                        .city("Great Falls")
+                        .url(authority: "gfcmsu.edu")
+                    
+                }
+                
+                Group { // community colleges
+                    "Dawson Community College"
+                        .city("Glendive")
+                        .url(authority: "dawson.edu")
+                    
+                    "Flathead Valley Community College"
+                        .city("Kalispell")
+                        .url(authority: "fvcc.edu")
+                    
+                    "Miles Community College"
+                        .city("Miles City")
+                        .url(authority: "milescc.edu")
+                    
+                }
+                                
+                Group { // tribal institutions
+                    "Aaniiih Nakoda College"
+                        .city("Harlem")
+                        .url(authority: "ancollege.edu")
+                    
+                    "Blackfeet Community College"
+                        .abbreviation("BFCC")
+                        .city("Browning")
+                        .url(authority: "bfcc.edu")
+                    
+                    "Chief Dull Knife College"
+                        .city("Lame Deer")
+                        .url(authority: "cdkc.edu")
+                    
+                    "Fort Peck Community College"
+                        .city("Poplar")
+                        .url(authority: "fpcc.edu")
+                    
+                    "Little Big Horn College"
+                        .city("Crow Agency")
+                        .url(authority: "lbhc.edu")
+                    
+                    "Salish Kootenai College"
+                        .city("Pablo")
+                        .url(authority: "skc.edu")
+                    
+                    "Stone Child College"
+                        .city("Box Elder")
+                        .url(authority: "stonechild.edu")
+                    
+                }
+                
+                Group { // private institutions
+                    "Carroll College"
+                        .city("Helena")
+                    
+                    "University of Providence"
+                        .city("Great Falls")
+                    
+                    "Rocky Mountain College"
+                        .abbreviation("Rocky", "RMC")
+                        .city("Billings")
+                    
+                }
+                
+            }
             
         }
         
@@ -419,6 +540,7 @@ public struct UnitedStates: CollegeGroup {
             
             "Drexel University"
                 .city("Philadelphia")
+                .newspaper(.triangle)
                 .url(authority: "drexel.edu")
             
             "University of Pennsylvania"
@@ -619,17 +741,18 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "tusculum.edu")
             
             SystemGroup(.universityOfTennessee) {
+                "University of Tennessee"
+                    .abbreviation("UTK", "Tenn")
+                    .city("Knoxville")
+                    .newspaper(.dailyBeacon)
+                    .url(authority: "utk.edu")
+                
                 "University of Tennessee at Chattanooga"
                     .url(authority: "utc.edu")
                 
                 "University of Tennessee Health Science Center"
                     .city("Memphis")
                     .url(authority: "uthsc.edu")
-                
-                "University of Tennessee"
-                    .abbreviation("UTK", "Tenn")
-                    .city("Knoxville")
-                    .url(authority: "utk.edu")
                 
                 "University of Tennessee at Martin"
                     .url(authority: "utm.edu")
@@ -847,6 +970,7 @@ public struct UnitedStates: CollegeGroup {
                     .url("https://www.wvu.edu/wvutech/")
                 
                 "WVU Potomac State College"
+                    .city("Keyser")
                     .url(authority: "potomacstatecollege.edu")
                 
             }
@@ -888,6 +1012,9 @@ extension UnitedStates {
 public extension UnitedStates.System {
     @UUIDResult var id: UUID {
         switch self {
+        case .montanaUniversity:
+            (237, 252, 70, 136, 191, 47, 71, 145, 184, 250, 70, 233, 20, 199, 219, 130)
+            
         case .universityOfAlabama:
             (238, 250, 125, 159, 204, 249, 70, 91, 189, 81, 179, 78, 90, 225, 163, 58)
             

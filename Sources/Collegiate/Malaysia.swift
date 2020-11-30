@@ -10,6 +10,7 @@ import CollegeGroup
 struct Malaysia: CollegeGroup {
     var body: Body {
         "German-Malaysian Institute"
+            .city("Kajang")
             .url(authority: "gmi.edu.my")
         
     }
