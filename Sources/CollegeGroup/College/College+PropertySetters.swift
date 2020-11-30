@@ -152,18 +152,22 @@ public extension College {
 // MARK: - `.newspaper(_:)`
 
 public extension College {
-    func newspaper(_ newspaper: StudentNewspaper) -> Self {
+    func newspaper(_ newspapers: StudentNewspaper...) -> Self {
+        _newspapers(newspapers)
+    }
+    
+    fileprivate func _newspapers(_ newspapers: [StudentNewspaper]) -> Self {
         var new = self
-        new[\.newspapers].append(newspaper)
+        new[\.newspapers].append(contentsOf: newspapers)
         return new
     }
     
 }
 
 public extension String {
-    func newspaper(_ newspaper: StudentNewspaper) -> College {
+    func newspaper(_ newspapers: StudentNewspaper...) -> College {
         self.as(College.self)
-            .studentNewspaper(newspaper)
+            ._newspapers(newspapers)
     }
     
 }
