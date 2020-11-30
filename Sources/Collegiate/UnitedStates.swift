@@ -23,8 +23,8 @@ public struct UnitedStates: CollegeGroup {
     }
     
     public var body: Body {
-        Group {
-            Group {
+        StateGroup(.alabama) {
+            SystemGroup(.universityOfAlabama) {
                 "University of Alabama"
                     .abbreviation("UA", "Bama", "ALA")
                     .city("Tuscaloosa")
@@ -37,16 +37,14 @@ public struct UnitedStates: CollegeGroup {
                     .url(authority: "uah.edu")
                 
             }
-            .system(System.universityOfAlabama)
             
             "Auburn University"
                 .city("Auburn")
                 .url(authority: "auburn.edu")
             
         }
-        .state(.alabama)
         
-        Group {
+        StateGroup(.alabama) {
             "Arizona State University"
                 .city("Tempe")
                 .url(authority: "asu.edu")
@@ -56,18 +54,16 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "suva.edu")
             
         }
-        .state(.arizona)
         
-        Group {
+        StateGroup(.arkansas) {
             "Arkansas Northeastern College"
                 .city("Blytheville")
                 .url(authority: "anc.edu")
             
         }
-        .state(.arkansas)
         
-        Group {
-            Group {
+        StateGroup(.california) {
+            SystemGroup(.universityOfCalifornia) {
                 "University of California, Berkeley"
                     .abbreviation("UC Berkeley", "Cal")
                     .url(authority: "berkeley.edu")
@@ -100,7 +96,6 @@ public struct UnitedStates: CollegeGroup {
                     .url(authority: "ucsf.edu")
                 
             }
-            .system(System.universityOfCalifornia)
             
             "Keck Graduate Institute"
                 .city("Claremont")
@@ -119,27 +114,24 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "usc.edu")
             
         }
-        .state(.california)
         
-        Group {
+        StateGroup(.connecticut) {
             "Yale University"
                 .abbreviation("Yale")
                 .city("New Haven")
                 .url(authority: "yale.edu")
             
         }
-        .state(.connecticut)
         
-        Group {
+        StateGroup(.deleware) {
             "University of Delaware"
                 .abbreviation("UD", "Delaware")
                 .city("Newark")
                 .url(authority: "udel.edu")
             
         }
-        .state(.deleware)
         
-        Group {
+        StateGroup(.florida) {
             "University of Central Florida"
                 .city("Oviedo")
                 .url(authority: "ucf.edu")
@@ -158,9 +150,8 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "fiu.edu")
             
         }
-        .state(.florida)
         
-        Group {
+        StateGroup(.georgia) {
             "Albany State University"
                 .city("Albany")
                 .url(authority: "asurams.edu")
@@ -179,9 +170,8 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "uga.edu")
             
         }
-        .state(.georgia)
         
-        Group {
+        StateGroup(.illinois) {
             "Eastern Illinois University"
                 .city("Charleston")
                 .url(authority: "eiu.edu")
@@ -203,48 +193,41 @@ public struct UnitedStates: CollegeGroup {
             
             "University of Illinois at Chicago"
                 .url(authority: "uic.edu")
-                .city("Chicago")
                 .system(System.universityOfIllinois)
             
         }
-        .state(.illinois)
         
-        Group {
+        StateGroup(.indiana) {
             "Indiana University, Bloomington"
                 .abbreviation("IU")
-                .city("Bloomington")
                 .url(authority: "indiana.edu")
             
         }
-        .state(.indiana)
         
-        Group {
+        StateGroup(.iowa) {
             "University of Iowa"
                 .abbreviation("UI", "U of I", "UIowa", "Iowa")
                 .city("Iowa City")
                 .url(authority: "uiowa.edu")
             
         }
-        .state(.iowa)
         
-        Group {
+        StateGroup(.louisiana) {
             "Louisiana State University"
                 .city("Baton Rouge")
                 .url(authority: "lsu.edu")
             
         }
-        .state(.louisiana)
         
-        Group {
+        StateGroup(.newHampshire) {
             "Franklin Pierce University"
                 .city("Rindge")
                 .abbreviation("FP", "FPU")
                 .url(authority: "franklinpierce.edu")
             
         }
-        .state(.newHampshire)
         
-        Group {
+        StateGroup(.newMexico) {
             "University of New Mexico"
                 .city("Albuquerque")
                 .url(authority: "unm.edu")
@@ -254,9 +237,8 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "nmsu.edu")
             
         }
-        .state(.newMexico)
         
-        Group {
+        StateGroup(.newYork) {
             "Iona College"
                 .abbreviation("Iona")
                 .city("New Rochelle")
@@ -276,9 +258,8 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "rochester.edu")
             
         }
-        .state(.newYork)
         
-        Group {
+        StateGroup(.northCarolina) {
             "Appalachian State University"
                 .abbreviation("ASU", "App State", "App")
                 .city("Boone")
@@ -296,11 +277,9 @@ public struct UnitedStates: CollegeGroup {
                 .city("Fayetteville")
                 .url(authority: "uncfsu.edu")
             
-            
-            Group {
+            SystemGroup(.universityOfNorthCarolina) {
                 "University of North Carolina at Chapel Hill"
                     .abbreviation("UNC", "UNC-Chapel Hill", "North Carolina")
-                    .city("Chapel Hill")
                     .url(authority: "unc.edu")
                 
                 "North Carolina Agriculture & Technical State University"
@@ -310,7 +289,6 @@ public struct UnitedStates: CollegeGroup {
                     .url(authority: "ncat.edu")
                 
                 "University of North Carolina, Asheville"
-                    .city("Asheville")
                     .url(authority: "unca.edu")
                 
                 "North Carolina Central University"
@@ -318,15 +296,12 @@ public struct UnitedStates: CollegeGroup {
                     .url(authority: "nccu.edu")
                 
                 "University of North Carolina, Charlotte"
-                    .city("Charlotte")
                     .url(authority: "uncc.edu")
                 
                 "University of North Carolina, Greensboro"
-                    .city("Greensboro")
                     .url(authority: "uncg.edu")
                 
                 "University of North Carolina, Pembroke"
-                    .city("Pembroke")
                     .url(authority: "uncp.edu")
                 
                 "University of North Carolina School of the Arts"
@@ -334,7 +309,6 @@ public struct UnitedStates: CollegeGroup {
                     .url(authority: "uncsa.edu")
                 
                 "University of North Carolina, Wilmington"
-                    .city("Wilmington")
                     .url(authority: "uncw.edu")
                 
                 "Western Carolina University"
@@ -346,7 +320,6 @@ public struct UnitedStates: CollegeGroup {
                     .url(authority: "wssu.edu")
                 
             }
-            .system(System.universityOfNorthCarolina)
             
             "North Carolina State University"
                 .city("Raleigh")
@@ -362,9 +335,8 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "wfu.edu")
             
         }
-        .state(.northCarolina)
         
-        Group {
+        StateGroup(.maryland) {
             "Johns Hopkins University"
                 .city("Baltimore")
                 .url(authority: "jhu.edu")
@@ -374,9 +346,8 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "mica.edu")
             
         }
-        .state(.maryland)
         
-        Group {
+        StateGroup(.massachusetts) {
             "Boston University"
                 .city("Boston")
                 .url(authority: "bu.edu", useHTTPS: false)
@@ -390,9 +361,8 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "mit.edu")
             
         }
-        .state(.massachusetts)
         
-        Group {
+        StateGroup(.michigan) {
             "University of Michigan"
                 .abbreviation("UM", "U of M", "UMich")
                 .city("Ann Arbor")
@@ -407,26 +377,23 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "mtu.edu")
             
         }
-        .state(.michigan)
         
-        Group {
+        StateGroup(.mississippi) {
             "The University of Mississippi"
                 .abbreviation("Ole Miss", "Miss")
                 .city("University")
                 .url(authority: "olemiss.edu")
             
         }
-        .state(.mississippi)
         
-        Group {
+        StateGroup(.montana) {
             "University of Montana Western"
                 .city("Dillon")
                 .url(authority: "umwestern.edu")
             
         }
-        .state(.montana)
         
-        Group {
+        StateGroup(.ohio) {
             "John Carroll University"
                 .city("University Heights")
                 .url(authority: "jcu.edu")
@@ -437,17 +404,15 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "osu.edu")
             
         }
-        .state(.ohio)
         
-        Group {
+        StateGroup(.alabama) {
             "Oklahoma University"
                 .city("Norman")
                 .url(authority: "ou.edu")
             
         }
-        .state(.oklahoma)
         
-        Group {
+        StateGroup(.pennsylvania) {
             "Carnegie Mellon University"
                 .city("Pittsburgh")
                 .url(authority: "cmu.edu")
@@ -466,10 +431,8 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "psu.edu")
             
         }
-        .state(.pennsylvania)
         
-        Group { // south carolina
-            
+        StateGroup(.southCarolina) {
             Group { // public universities
                 "Clemson University"
                     .city("Clemson")
@@ -497,7 +460,7 @@ public struct UnitedStates: CollegeGroup {
                     .city("Orangeburg")
                     .url(authority: "scsu.edu")
                 
-                Group {
+                SystemGroup(.universityOfSouthCarolina) {
                     "University of South Carolina"
                         .city("Columbia")
                         .url(authority: "sc.edu")
@@ -531,7 +494,6 @@ public struct UnitedStates: CollegeGroup {
                         .url(authority: "uscupstate.edu")
                     
                 }
-                .system(System.universityOfSouthCarolina)
                 
                 "Winthrop University"
                     .city("Rock Hill")
@@ -594,9 +556,8 @@ public struct UnitedStates: CollegeGroup {
                 .abbreviation("The Citadel")
             
         }
-        .state(.southCarolina)
         
-        Group {
+        StateGroup(.tennessee) {
             "Austin Peay State University"
                 .city("Clarksville")
                 .url(authority: "apsu.edu")
@@ -657,22 +618,20 @@ public struct UnitedStates: CollegeGroup {
                 .city("Tusculum")
                 .url(authority: "tusculum.edu")
             
-            Group {
+            SystemGroup(.universityOfTennessee) {
                 "University of Tennessee at Chattanooga"
-                    .city("Chattanooga")
                     .url(authority: "utc.edu")
                 
                 "University of Tennessee Health Science Center"
                     .city("Memphis")
                     .url(authority: "uthsc.edu")
                 
-                "University of Tennessee, Knoxville"
+                "University of Tennessee"
                     .abbreviation("UTK", "Tenn")
                     .city("Knoxville")
                     .url(authority: "utk.edu")
                 
                 "University of Tennessee at Martin"
-                    .city("Martin")
                     .url(authority: "utm.edu")
                 
                 "University of Tennessee Space Institute"
@@ -680,16 +639,14 @@ public struct UnitedStates: CollegeGroup {
                     .url(authority: "utsi.edu")
                 
             }
-            .system(System.universityOfTennessee)
             
             "Union University"
                 .city("Jackson")
                 .url(authority: "uu.edu")
             
         }
-        .state(.tennessee)
         
-        Group {
+        StateGroup(.texas) {
             "Abilene Christian University"
                 .city("Abilene")
                 .url(authority: "acu.edu")
@@ -711,7 +668,7 @@ public struct UnitedStates: CollegeGroup {
                 .city("Tyler")
                 .url(authority: "tjc.edu")
             
-            Group {
+            SystemGroup(.universityOfTexas) {
                 "University of Texas at Austin"
                     .abbreviation("UT Austin", "UT", "Texas")
                     .url(authority: "utexas.edu")
@@ -725,9 +682,8 @@ public struct UnitedStates: CollegeGroup {
             }
             
         }
-        .state(.texas)
         
-        Group {
+        StateGroup(.utah) {
             "Brigham Young University"
                 .city("Provo")
                 .url(authority: "byu.edu")
@@ -742,10 +698,9 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "eastern.usu.edu")
             
         }
-        .state(.utah)
         
         
-        Group {
+        StateGroup(.virginia) {
             "George Mason University"
                 .abbreviation("Mason", "GMU")
                 .city("Fairfax City")
@@ -776,18 +731,16 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "wlu.edu")
             
         }
-        .state(.virginia)
         
         
-        Group {
+        StateGroup(.washington) {
             "University of Washington"
                 .city("Seattle")
                 .url(authority: "washington.edu")
             
         }
-        .state(.washington)
         
-        Group {
+        StateGroup(.westVirginia) {
             "Alderson Broaddus University"
                 .abbreviation("AB")
                 .city("Philippi")
@@ -883,7 +836,7 @@ public struct UnitedStates: CollegeGroup {
                 .city("Institute")
                 .url(authority: "wvstateu.edu")
             
-            Group {
+            SystemGroup(.westVirginiaUniversity) {
                 "West Virginia University"
                     .city("Morgantown")
                     .url(authority: "wvu.edu")
@@ -897,10 +850,8 @@ public struct UnitedStates: CollegeGroup {
                     .url(authority: "potomacstatecollege.edu")
                 
             }
-            .system(System.westVirginiaUniversity)
             
             "West Virginia University at Parkersburg"
-                .city("Parkersburg")
                 .url(authority: "wvup.edu")
             
             "West Virginia Wesleyan College"
@@ -912,15 +863,12 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "wheeling.edu")
             
         }
-        .state(.westVirginia)
         
-        
-        Group {
+        CityGroup("Washington, D.C.") {
             "George Washington University"
                 .url(authority: "gwu.edu")
             
         }
-        .city("Washington, D.C.")
         
     }
     
@@ -930,36 +878,14 @@ public struct UnitedStates: CollegeGroup {
     
 }
 
-public extension UnitedStates.System {
-    @SingleResult var title: String {
-        switch self {
-        case .universityOfAlabama:
-            "University of Alabama"
-            
-        case .universityOfCalifornia:
-            "University of California"
-            
-        case .universityOfNorthCarolina:
-            "University of North Carolina"
-            
-        case .universityOfIllinois:
-            "University of Illinois"
-            
-        case .universityOfSouthCarolina:
-            "University of South Carolina"
-            
-        case .universityOfTennessee:
-            "University of Tennessee"
-            
-        case .universityOfTexas:
-            "University of Texas"
-            
-        case .westVirginiaUniversity:
-            "West Virginia University"
-            
-        }
-    }
+internal typealias _USSystemGroup = SystemGroup<UnitedStates.System>
+
+extension UnitedStates {
+    internal typealias SystemGroup = _USSystemGroup
     
+}
+
+public extension UnitedStates.System {
     @UUIDResult var id: UUID {
         switch self {
         case .universityOfAlabama:

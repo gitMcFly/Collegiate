@@ -90,3 +90,15 @@ fileprivate extension College {
     }
     
 }
+
+
+// MARK: - College.updating(_:)
+
+internal extension College {
+    func updating<V>(_ keyPath: WritableKeyPath<College.Properties, V>, to value: V) -> Self {
+        var new = self
+        new[keyPath] = value
+        return new
+    }
+    
+}
