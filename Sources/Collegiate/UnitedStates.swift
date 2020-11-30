@@ -193,7 +193,6 @@ public struct UnitedStates: CollegeGroup {
             
             "University of Illinois at Chicago"
                 .url(authority: "uic.edu")
-                .city("Chicago")
                 .system(System.universityOfIllinois)
             
         }
@@ -281,7 +280,6 @@ public struct UnitedStates: CollegeGroup {
             SystemGroup(.universityOfNorthCarolina) {
                 "University of North Carolina at Chapel Hill"
                     .abbreviation("UNC", "UNC-Chapel Hill", "North Carolina")
-                    .city("Chapel Hill")
                     .url(authority: "unc.edu")
                 
                 "North Carolina Agriculture & Technical State University"
@@ -291,7 +289,6 @@ public struct UnitedStates: CollegeGroup {
                     .url(authority: "ncat.edu")
                 
                 "University of North Carolina, Asheville"
-                    .city("Asheville")
                     .url(authority: "unca.edu")
                 
                 "North Carolina Central University"
@@ -299,15 +296,12 @@ public struct UnitedStates: CollegeGroup {
                     .url(authority: "nccu.edu")
                 
                 "University of North Carolina, Charlotte"
-                    .city("Charlotte")
                     .url(authority: "uncc.edu")
                 
                 "University of North Carolina, Greensboro"
-                    .city("Greensboro")
                     .url(authority: "uncg.edu")
                 
                 "University of North Carolina, Pembroke"
-                    .city("Pembroke")
                     .url(authority: "uncp.edu")
                 
                 "University of North Carolina School of the Arts"
@@ -315,7 +309,6 @@ public struct UnitedStates: CollegeGroup {
                     .url(authority: "uncsa.edu")
                 
                 "University of North Carolina, Wilmington"
-                    .city("Wilmington")
                     .url(authority: "uncw.edu")
                 
                 "Western Carolina University"
@@ -627,20 +620,18 @@ public struct UnitedStates: CollegeGroup {
             
             SystemGroup(.universityOfTennessee) {
                 "University of Tennessee at Chattanooga"
-                    .city("Chattanooga")
                     .url(authority: "utc.edu")
                 
                 "University of Tennessee Health Science Center"
                     .city("Memphis")
                     .url(authority: "uthsc.edu")
                 
-                "University of Tennessee, Knoxville"
+                "University of Tennessee"
                     .abbreviation("UTK", "Tenn")
                     .city("Knoxville")
                     .url(authority: "utk.edu")
                 
                 "University of Tennessee at Martin"
-                    .city("Martin")
                     .url(authority: "utm.edu")
                 
                 "University of Tennessee Space Institute"
@@ -861,7 +852,6 @@ public struct UnitedStates: CollegeGroup {
             }
             
             "West Virginia University at Parkersburg"
-                .city("Parkersburg")
                 .url(authority: "wvup.edu")
             
             "West Virginia Wesleyan College"
