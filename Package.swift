@@ -17,6 +17,9 @@ let package = Package(
         .library(
             name: "CollegeGroup",
             targets: ["CollegeGroup"]),
+//        .library(
+//            name: "StudentNewspaper",
+//            targets: ["StudentNewspaper"]),
         .library(
             name: "PartialAddress",
             targets: ["PartialAddress"]),
@@ -39,6 +42,7 @@ let package = Package(
                 "CollegeGroup",
                 "MixedGroup",
                 .product(name: "Statehood", package: "Statehood"),
+                "StudentNewspaper",
             ]),
         .target(
             name: "CollegeGroup",
@@ -56,6 +60,10 @@ let package = Package(
                 .product(name: "Resultto", package: "Resultto"),
                 .product(name: "Statehood", package: "Statehood"),
                 .product(name: "unstandard", package: "unstandard"),
+            ]),
+        .target(
+            name: "StudentNewspaper",
+            dependencies: [
             ]),
         .testTarget(
             name: "CollegiateTests",
