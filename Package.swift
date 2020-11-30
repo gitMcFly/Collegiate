@@ -64,7 +64,6 @@ let package = Package(
         .target(
             name: "StudentNewspaper",
             dependencies: [
-                "CollegeGroup",
                 .product(name: "unstandard", package: "unstandard"),
             ]),
         .testTarget(
