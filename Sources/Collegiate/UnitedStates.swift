@@ -11,6 +11,7 @@ import unstandard
 
 public struct UnitedStates: CollegeGroup {
     public enum System: UniversitySystem {
+        case montanaUniversity
         case universityOfAlabama
         case universityOfCalifornia
         case universityOfNorthCarolina
@@ -387,9 +388,42 @@ public struct UnitedStates: CollegeGroup {
         }
         
         StateGroup(.montana) {
-            "University of Montana Western"
-                .city("Dillon")
-                .url(authority: "umwestern.edu")
+            SystemGroup(.montanaUniversity) {
+                Group { // University of Montana
+                    "University of Montana Western"
+                        .city("Dillon")
+                        .url(authority: "umwestern.edu")
+                    
+                    "Missoula College"
+                        .city("Missoula")
+                        .url(authority: "mc.umt.edu")
+                    
+                    "Highlands College of Montana Tech"
+                        .city("Butte")
+                        .url("https://www.mtech.edu/highlands/index.html")
+                    
+                    "Helena College"
+                        .city("Helena")
+                        .url(authority: "helenacollege.edu")
+                    
+                }
+                
+                Group { // Montana State
+                    "Montana State University"
+                        .city("Bozeman")
+                        .url(authority: "montana.edu")
+                    
+                    "Montana State University Billings"
+                        .city("Billings")
+                        .url(authority: "msubillings.edu")
+                    
+                    "Gallatin College"
+                        .city("Bozeman")
+                        .url(authority: "gallatin.montana.edu")
+                    
+                }
+                
+            }
             
         }
         
@@ -888,6 +922,9 @@ extension UnitedStates {
 public extension UnitedStates.System {
     @UUIDResult var id: UUID {
         switch self {
+        case .montanaUniversity:
+            (237, 252, 70, 136, 191, 47, 71, 145, 184, 250, 70, 233, 20, 199, 219, 130)
+            
         case .universityOfAlabama:
             (238, 250, 125, 159, 204, 249, 70, 91, 189, 81, 179, 78, 90, 225, 163, 58)
             
