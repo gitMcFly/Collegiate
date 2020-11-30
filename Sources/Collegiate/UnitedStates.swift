@@ -19,6 +19,7 @@ public struct UnitedStates: CollegeGroup {
         case universityOfTennessee
         case universityOfTexas
         case universityOfSouthCarolina
+        case universitySystemOfGeorgia
         case westVirginiaUniversity
         
     }
@@ -153,9 +154,42 @@ public struct UnitedStates: CollegeGroup {
         }
         
         StateGroup(.georgia) {
-            "Albany State University"
-                .city("Albany")
-                .url(authority: "asurams.edu")
+            SystemGroup(.universitySystemOfGeorgia) {
+                "Georgia Institute of Technology"
+                    .commonTitle("Georgia Tech")
+                    .url(authority: "gatech.edu")
+                
+                "University of Georgia"
+                    .city("Athens")
+                    .abbreviation("UGA", "GEO")
+                    .url(authority: "uga.edu")
+                
+                "University of North Georgia"
+                    .city("Dahlonega")
+                    .url(authority: "ung.edu")
+                
+                "Augusta University"
+                    .city("Augusta")
+                    .url(authority: "augusta.edu")
+                
+                "South Georgia State College"
+                    .city("Douglas")
+                    .url(authority: "sgsc.edu")
+                
+                "Albany State University"
+                    .city("Albany")
+                    .url(authority: "asurams.edu")
+                
+                "Skidaway Institute of Oceanography"
+                    .city("Skidaway Island")
+                    .abbreviation("SkIO")
+                    .url(authority: "skio.uga.edu")
+                
+                "Abraham Baldwin Agricultural College"
+                    .city("Tifton")
+                    .url(authority: "abac.edu")
+                
+            }
             
             "Clayton State University"
                 .city("Morrow")
@@ -164,11 +198,6 @@ public struct UnitedStates: CollegeGroup {
             "Fort Valley State University"
                 .city("Fort Valley")
                 .url(authority: "fvsu.edu")
-            
-            "University of Georgia"
-                .city("Athens")
-                .abbreviation("UGA", "GEO")
-                .url(authority: "uga.edu")
             
         }
         
@@ -1035,6 +1064,9 @@ public extension UnitedStates.System {
             
         case .universityOfTexas:
             (233, 11, 227, 198, 95, 156, 76, 173, 136, 93, 88, 213, 146, 25, 16, 220)
+            
+        case .universitySystemOfGeorgia:
+            (42, 250, 10, 52, 175, 77, 65, 99, 148, 114, 88, 164, 209, 142, 151, 29)
             
         case .westVirginiaUniversity:
             (31, 85, 152, 235, 251, 236, 77, 131, 189, 235, 180, 60, 238, 142, 119, 198)
