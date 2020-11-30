@@ -411,6 +411,7 @@ public struct UnitedStates: CollegeGroup {
                 Group { // Montana State
                     "Montana State University"
                         .city("Bozeman")
+                        .newspaper(.msuExponent)
                         .url(authority: "montana.edu")
                     
                     "Montana State University Billings"
@@ -420,6 +421,14 @@ public struct UnitedStates: CollegeGroup {
                     "Gallatin College"
                         .city("Bozeman")
                         .url(authority: "gallatin.montana.edu")
+                    
+                    "Great Falls College"
+                        .city("Great Falls")
+                        .url(authority: "gfcmsu.edu")
+                    
+                    "Montana State University Northern"
+                        .abbreviation("MSU Northern", "MSUN")
+                        .url(authority: "msun.edu")
                     
                 }
                 
@@ -453,6 +462,7 @@ public struct UnitedStates: CollegeGroup {
             
             "Drexel University"
                 .city("Philadelphia")
+                .newspaper(.triangle)
                 .url(authority: "drexel.edu")
             
             "University of Pennsylvania"
@@ -653,17 +663,18 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "tusculum.edu")
             
             SystemGroup(.universityOfTennessee) {
+                "University of Tennessee"
+                    .abbreviation("UTK", "Tenn")
+                    .city("Knoxville")
+                    .newspaper(.dailyBeacon)
+                    .url(authority: "utk.edu")
+                
                 "University of Tennessee at Chattanooga"
                     .url(authority: "utc.edu")
                 
                 "University of Tennessee Health Science Center"
                     .city("Memphis")
                     .url(authority: "uthsc.edu")
-                
-                "University of Tennessee"
-                    .abbreviation("UTK", "Tenn")
-                    .city("Knoxville")
-                    .url(authority: "utk.edu")
                 
                 "University of Tennessee at Martin"
                     .url(authority: "utm.edu")
