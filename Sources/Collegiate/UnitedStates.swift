@@ -896,35 +896,6 @@ extension UnitedStates {
 }
 
 public extension UnitedStates.System {
-    @SingleResult var title: String {
-        switch self {
-        case .universityOfAlabama:
-            "University of Alabama"
-            
-        case .universityOfCalifornia:
-            "University of California"
-            
-        case .universityOfNorthCarolina:
-            "University of North Carolina"
-            
-        case .universityOfIllinois:
-            "University of Illinois"
-            
-        case .universityOfSouthCarolina:
-            "University of South Carolina"
-            
-        case .universityOfTennessee:
-            "University of Tennessee"
-            
-        case .universityOfTexas:
-            "University of Texas"
-            
-        case .westVirginiaUniversity:
-            "West Virginia University"
-            
-        }
-    }
-    
     @UUIDResult var id: UUID {
         switch self {
         case .universityOfAlabama:
