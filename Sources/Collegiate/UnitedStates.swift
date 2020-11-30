@@ -44,6 +44,10 @@ public struct UnitedStates: CollegeGroup {
                 .city("Auburn")
                 .url(authority: "auburn.edu")
             
+            "Tuskegee University"
+                .city("Tuskegee")
+                .url(authority: "tuskegee.edu")
+            
         }
         
         StateGroup(.alabama) {
