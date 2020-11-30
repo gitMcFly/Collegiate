@@ -9,6 +9,7 @@ import Foundation
 import MixedGroup
 import PartialAddress
 import Statehood
+import StudentNewspaper
 
 public struct College: ExpressibleByStringLiteral {
     public struct Properties {
@@ -20,6 +21,8 @@ public struct College: ExpressibleByStringLiteral {
         public var system: AnyUniversitySystem?
         
         public var abbreviations: [String] = []
+        
+        internal var newspapers: [StudentNewspaper] = []
         
         public var siteAuthority: String?
         internal var _siteAuthorityUsesHTTPS: Bool?
