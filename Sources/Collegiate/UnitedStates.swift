@@ -566,6 +566,28 @@ public struct UnitedStates: CollegeGroup {
             
         }
         
+        StateGroup(.oregon) {
+            "Eastern Oregon University"
+                .city("La Grande")
+                .url(authority: "eou.edu")
+            
+            "Oregon Health & Science University"
+                .city("Portland")
+                .abbreviation("OHSU")
+                .url(authority: "ohsu.edu")
+            
+            "Oregon Institute of Technology"
+                .commonTitle("Oregon Tech")
+                .city("Klamath Falls")
+                .url(authority: "oit.edu")
+            
+            "Portland State University"
+                .city("Portland")
+                .abbreviation("PSX", "PDX")
+                .url(authority: "pdx.edu")
+            
+        }
+        
         StateGroup(.pennsylvania) {
             "Carnegie Mellon University"
                 .city("Pittsburgh")
