@@ -765,6 +765,10 @@ public struct UnitedStates: CollegeGroup {
                 .city("Bristol")
                 .url(authority: "king.edu")
             
+            "Knoxville College"
+                .city("Knoxville")
+                .url(authority: "knoxvillecollege.edu")
+            
             "Lincoln Memorial University"
                 .city("Harrogate")
                 .url(authority: "lmunet.edu")
