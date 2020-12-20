@@ -935,7 +935,7 @@ public struct UnitedStates: CollegeGroup {
             
             "Bethany College"
                 .city("Bethany")
-                .url(authority: "bethanywv.edu")
+                .url(authority: "www.bethanywv.edu")
             
             "Bluefield State College"
                 .city("Bluefield")
@@ -967,26 +967,33 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "easternwv.edu")
             
             "Fairmont State University"
+                .url(authority: "fairmontstate.edu")
             
             "Future Generations University"
+                .url(authority: "future.edu")
             
             "Glenville State College"
                 .city("Glenville")
                 .url(authority: "glenville.edu")
             
             "Huntington Junior College"
+                .url(authority: "huntingtonjuniorcollege.edu", useHTTPS: false)
             
             "Marshall University"
+                .url(authority: "marshall.edu")
             
             "Mountwest Community and Technical College"
+                .url(authority: "mctc.edu")
             
             "New River Community and Technical College"
+                .url(authority: "newriver.edu")
             
             "Ohio Valley University"
                 .city("Parkersburg")
                 .url(authority: "ovu.edu")
             
             "Pierpont Community and Technical College"
+                .url(authority: "pierpont.edu")
             
             "Salem University"
                 .city("Salem")
