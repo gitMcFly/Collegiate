@@ -8,6 +8,7 @@
 import unstandard
 
 public enum StudentNewspaper: CaseIterable {
+    case blueBanner
     case dailyBeacon
     case dailyTexan
     case msuExponent
@@ -18,6 +19,7 @@ public enum StudentNewspaper: CaseIterable {
 public extension StudentNewspaper {
     @SingleResult var siteReference: SiteReference? {
         switch self {
+        case .blueBanner: .authority("thebluebanner.net")
         case .dailyBeacon: .authority("utdailybeacon.com")
         case .dailyTexan: .authority("dailytexanonline.com")
         case .msuExponent: .authority("msuexponent.com")

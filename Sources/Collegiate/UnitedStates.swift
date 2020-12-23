@@ -299,6 +299,10 @@ public struct UnitedStates: CollegeGroup {
                 .city("Boone")
                 .url(authority: "appstate.edu")
             
+            "Asheville-Buncombe Technical College"
+                .commonTitle("A-B Tech")
+                .url(authority: "abtech.edu")
+            
             "Eastern Carolina University"
                 .city("Greenville")
                 .url(authority: "ecu.edu")
@@ -323,6 +327,7 @@ public struct UnitedStates: CollegeGroup {
                     .url(authority: "ncat.edu")
                 
                 "University of North Carolina, Asheville"
+                    .newspaper(.blueBanner)
                     .url(authority: "unca.edu")
                 
                 "North Carolina Central University"
@@ -367,6 +372,10 @@ public struct UnitedStates: CollegeGroup {
                 .abbreviation("WFU", "WF")
                 .city("Winston-Salem")
                 .url(authority: "wfu.edu")
+            
+            "Warren Wilson College"
+                .city("Asheville")
+                .url(authority: "warren-wilson.edu")
             
         }
         
