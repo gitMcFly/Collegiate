@@ -299,7 +299,7 @@ public struct UnitedStates: CollegeGroup {
                 .city("Boone")
                 .url(authority: "appstate.edu")
             
-            "Asheville-Buncombe Technical College"
+            "Asheville-Buncombe Technical Community College"
                 .commonTitle("A-B Tech")
                 .url(authority: "abtech.edu")
             
