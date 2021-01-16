@@ -34,7 +34,7 @@ extension ForEach: CollegeGroup where Data.Element == College {
 }
 
 
-// MARK: - Property Setters
+///: Property Setters
 
 public extension CollegeGroup {
     func city(_ city: String) -> some CollegeGroup {

@@ -10,7 +10,7 @@ import PartialAddress
 import Statehood
 import StudentNewspaper
 
-// MARK: - `.url(_:)`
+///: `.url(_:)`
 
 public extension College {
     func url(authority: String, useHTTPS: Bool = true) -> Self {
@@ -42,7 +42,7 @@ public extension String {
     
 }
 
-// MARK: - `.city(_:)`
+///: `.city(_:)`
 
 public extension College {
     func city(_ city: String, neighborhood: String? = nil) -> Self {
@@ -69,7 +69,7 @@ public extension String {
 }
 
 
-// MARK: - `.state(_:)`
+///: `.state(_:)`
 
 public extension College {
     func state(_ state: State) -> Self {
@@ -81,7 +81,7 @@ public extension College {
 }
 
 
-// MARK: - `.country(_:)`
+///: `.country(_:)`
 
 public extension College {
     func country(_ country: Country) -> Self {
@@ -93,7 +93,7 @@ public extension College {
 }
 
 
-// MARK: - `.abbreviation(_:)`
+///: `.abbreviation(_:)`
 
 public extension College {
     fileprivate func _abbreviation<C>(_ abbreviations: C) -> Self where C: Collection, C.Element == String {
@@ -117,7 +117,7 @@ public extension String {
 }
 
 
-// MARK: - `.commonTitle(_:)`
+///: `.commonTitle(_:)`
 
 public extension College {
     func commonTitle(_ title: String) -> Self {
@@ -137,7 +137,7 @@ public extension String {
 }
 
 
-// MARK: - `.system(_:)`
+///: `.system(_:)`
 
 public extension College {
     func system<System>(_ system: System) -> Self where System : UniversitySystem {
@@ -149,7 +149,7 @@ public extension College {
 }
 
 
-// MARK: - `.newspaper(_:)`
+///: `.newspaper(_:)`
 
 public extension College {
     func newspaper(_ newspapers: StudentNewspaper...) -> Self {
