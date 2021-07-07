@@ -61,7 +61,7 @@ extension College {
 public typealias CollegeGroupBuilder = MixedGroupBuilder<College>
 
 
-// MARK: -
+///:
 
 public extension College.Properties {
     var primaryAbbreviation: String? {
@@ -71,7 +71,7 @@ public extension College.Properties {
 }
 
 
-// MARK: -
+///:
 
 fileprivate extension College {
     static let citySeparators = [", ", " at ", " in "]
@@ -95,7 +95,7 @@ fileprivate extension College {
 }
 
 
-// MARK: - College.updating(_:)
+///: College.updating(_:)
 
 internal extension College {
     func updating<V>(_ keyPath: WritableKeyPath<College.Properties, V>, to value: V) -> Self {

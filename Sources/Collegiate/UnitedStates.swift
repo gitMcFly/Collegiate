@@ -19,6 +19,7 @@ public struct UnitedStates: CollegeGroup {
         case universityOfTennessee
         case universityOfTexas
         case universityOfSouthCarolina
+        case universitySystemOfGeorgia
         case westVirginiaUniversity
         
     }
@@ -42,6 +43,10 @@ public struct UnitedStates: CollegeGroup {
             "Auburn University"
                 .city("Auburn")
                 .url(authority: "auburn.edu")
+            
+            "Tuskegee University"
+                .city("Tuskegee")
+                .url(authority: "tuskegee.edu")
             
         }
         
@@ -153,9 +158,42 @@ public struct UnitedStates: CollegeGroup {
         }
         
         StateGroup(.georgia) {
-            "Albany State University"
-                .city("Albany")
-                .url(authority: "asurams.edu")
+            SystemGroup(.universitySystemOfGeorgia) {
+                "Georgia Institute of Technology"
+                    .commonTitle("Georgia Tech")
+                    .url(authority: "gatech.edu")
+                
+                "University of Georgia"
+                    .city("Athens")
+                    .abbreviation("UGA", "GEO")
+                    .url(authority: "uga.edu")
+                
+                "University of North Georgia"
+                    .city("Dahlonega")
+                    .url(authority: "ung.edu")
+                
+                "Augusta University"
+                    .city("Augusta")
+                    .url(authority: "augusta.edu")
+                
+                "South Georgia State College"
+                    .city("Douglas")
+                    .url(authority: "sgsc.edu")
+                
+                "Albany State University"
+                    .city("Albany")
+                    .url(authority: "asurams.edu")
+                
+                "Skidaway Institute of Oceanography"
+                    .city("Skidaway Island")
+                    .abbreviation("SkIO")
+                    .url(authority: "skio.uga.edu")
+                
+                "Abraham Baldwin Agricultural College"
+                    .city("Tifton")
+                    .url(authority: "abac.edu")
+                
+            }
             
             "Clayton State University"
                 .city("Morrow")
@@ -164,11 +202,6 @@ public struct UnitedStates: CollegeGroup {
             "Fort Valley State University"
                 .city("Fort Valley")
                 .url(authority: "fvsu.edu")
-            
-            "University of Georgia"
-                .city("Athens")
-                .abbreviation("UGA", "GEO")
-                .url(authority: "uga.edu")
             
         }
         
@@ -266,6 +299,10 @@ public struct UnitedStates: CollegeGroup {
                 .city("Boone")
                 .url(authority: "appstate.edu")
             
+            "Asheville-Buncombe Technical Community College"
+                .commonTitle("A-B Tech")
+                .url(authority: "abtech.edu")
+            
             "Eastern Carolina University"
                 .city("Greenville")
                 .url(authority: "ecu.edu")
@@ -290,6 +327,7 @@ public struct UnitedStates: CollegeGroup {
                     .url(authority: "ncat.edu")
                 
                 "University of North Carolina, Asheville"
+                    .newspaper(.blueBanner)
                     .url(authority: "unca.edu")
                 
                 "North Carolina Central University"
@@ -334,6 +372,10 @@ public struct UnitedStates: CollegeGroup {
                 .abbreviation("WFU", "WF")
                 .city("Winston-Salem")
                 .url(authority: "wfu.edu")
+            
+            "Warren Wilson College"
+                .city("Asheville")
+                .url(authority: "warren-wilson.edu")
             
         }
         
@@ -533,6 +575,28 @@ public struct UnitedStates: CollegeGroup {
             
         }
         
+        StateGroup(.oregon) {
+            "Eastern Oregon University"
+                .city("La Grande")
+                .url(authority: "eou.edu")
+            
+            "Oregon Health & Science University"
+                .city("Portland")
+                .abbreviation("OHSU")
+                .url(authority: "ohsu.edu")
+            
+            "Oregon Institute of Technology"
+                .commonTitle("Oregon Tech")
+                .city("Klamath Falls")
+                .url(authority: "oit.edu")
+            
+            "Portland State University"
+                .city("Portland")
+                .abbreviation("PSX", "PDX")
+                .url(authority: "pdx.edu")
+            
+        }
+        
         StateGroup(.pennsylvania) {
             "Carnegie Mellon University"
                 .city("Pittsburgh")
@@ -710,6 +774,10 @@ public struct UnitedStates: CollegeGroup {
                 .city("Bristol")
                 .url(authority: "king.edu")
             
+            "Knoxville College"
+                .city("Knoxville")
+                .url(authority: "knoxvillecollege.edu")
+            
             "Lincoln Memorial University"
                 .city("Harrogate")
                 .url(authority: "lmunet.edu")
@@ -880,7 +948,7 @@ public struct UnitedStates: CollegeGroup {
             
             "Bethany College"
                 .city("Bethany")
-                .url(authority: "bethanywv.edu")
+                .url(authority: "www.bethanywv.edu")
             
             "Bluefield State College"
                 .city("Bluefield")
@@ -912,26 +980,33 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "easternwv.edu")
             
             "Fairmont State University"
+                .url(authority: "fairmontstate.edu")
             
             "Future Generations University"
+                .url(authority: "future.edu")
             
             "Glenville State College"
                 .city("Glenville")
                 .url(authority: "glenville.edu")
             
             "Huntington Junior College"
+                .url(authority: "huntingtonjuniorcollege.edu", useHTTPS: false)
             
             "Marshall University"
+                .url(authority: "marshall.edu")
             
             "Mountwest Community and Technical College"
+                .url(authority: "mctc.edu")
             
             "New River Community and Technical College"
+                .url(authority: "newriver.edu")
             
             "Ohio Valley University"
                 .city("Parkersburg")
                 .url(authority: "ovu.edu")
             
             "Pierpont Community and Technical College"
+                .url(authority: "pierpont.edu")
             
             "Salem University"
                 .city("Salem")
@@ -1035,6 +1110,9 @@ public extension UnitedStates.System {
             
         case .universityOfTexas:
             (233, 11, 227, 198, 95, 156, 76, 173, 136, 93, 88, 213, 146, 25, 16, 220)
+            
+        case .universitySystemOfGeorgia:
+            (42, 250, 10, 52, 175, 77, 65, 99, 148, 114, 88, 164, 209, 142, 151, 29)
             
         case .westVirginiaUniversity:
             (31, 85, 152, 235, 251, 236, 77, 131, 189, 235, 180, 60, 238, 142, 119, 198)
