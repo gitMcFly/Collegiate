@@ -161,6 +161,7 @@ public struct UnitedStates: CollegeGroup {
             SystemGroup(.universitySystemOfGeorgia) {
                 "Georgia Institute of Technology"
                     .commonTitle("Georgia Tech")
+                    .city("Atlanta")
                     .url(authority: "gatech.edu")
                 
                 "University of Georgia"
@@ -301,6 +302,7 @@ public struct UnitedStates: CollegeGroup {
             
             "Asheville-Buncombe Technical Community College"
                 .commonTitle("A-B Tech")
+                .city("Asheville")
                 .url(authority: "abtech.edu")
             
             "Eastern Carolina University"
@@ -980,9 +982,11 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "easternwv.edu")
             
             "Fairmont State University"
+                .city("Farimont")
                 .url(authority: "fairmontstate.edu")
             
             "Future Generations University"
+                .city("Franklin")
                 .url(authority: "future.edu")
             
             "Glenville State College"
@@ -990,15 +994,19 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "glenville.edu")
             
             "Huntington Junior College"
+                .city("Huntington")
                 .url(authority: "huntingtonjuniorcollege.edu", useHTTPS: false)
             
             "Marshall University"
+                .city("Huntington")
                 .url(authority: "marshall.edu")
             
             "Mountwest Community and Technical College"
+                .city("Huntington")
                 .url(authority: "mctc.edu")
             
             "New River Community and Technical College"
+                .city("Beaver")
                 .url(authority: "newriver.edu")
             
             "Ohio Valley University"
@@ -1006,6 +1014,7 @@ public struct UnitedStates: CollegeGroup {
                 .url(authority: "ovu.edu")
             
             "Pierpont Community and Technical College"
+                .city("Farimont")
                 .url(authority: "pierpont.edu")
             
             "Salem University"
