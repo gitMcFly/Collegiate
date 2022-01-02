@@ -11,8 +11,8 @@ import unstandard
 
 fileprivate let initialComponentsSeparators = CharacterSet.whitespaces.union(.hyphens)
 
-internal extension String {
-    var initials: String {
+extension String {
+    internal var initials: String {
         self.components(separatedBy: initialComponentsSeparators)
             .flatMap { c -> [Substring] in
                 guard !c.allSatisfy(\.isUppercase) else { return [Substring(c)] }

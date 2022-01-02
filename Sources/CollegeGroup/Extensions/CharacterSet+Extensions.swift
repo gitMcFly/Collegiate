@@ -5,9 +5,9 @@
 //  Created by Christopher Weems on 11/21/20.
 //
 
-import Foundation
+import struct Foundation.CharacterSet
 
-internal extension CharacterSet {
-    static let hyphens = Self(charactersIn: "-­᠆‐‑⁃")
+extension CharacterSet {
+    internal static let hyphens = Self(charactersIn: "-­᠆‐‑⁃")
     
 }

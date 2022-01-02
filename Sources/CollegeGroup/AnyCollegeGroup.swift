@@ -33,8 +33,8 @@ public struct AnyCollegeGroup: CollegeGroup {
     
 }
 
-public extension CollegeGroup {
-    func eraseToAnyCollegeGroup() -> AnyCollegeGroup {
+extension CollegeGroup {
+    public func eraseToAnyCollegeGroup() -> AnyCollegeGroup {
         .init(other: self)
     }
     

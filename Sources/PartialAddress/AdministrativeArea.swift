@@ -14,7 +14,7 @@ public enum AdministrativeArea {
 }
 
 extension AdministrativeArea {
-    var formattedTitle: String {
+    internal var formattedTitle: String {
         switch self {
         case .state(let state):
             return state.fullName

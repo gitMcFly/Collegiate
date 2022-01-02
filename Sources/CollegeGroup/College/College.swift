@@ -63,8 +63,8 @@ public typealias CollegeGroupBuilder = MixedGroupBuilder<College>
 
 ///:
 
-public extension College.Properties {
-    var primaryAbbreviation: String? {
+extension College.Properties {
+    public var primaryAbbreviation: String? {
         abbreviations.first ?? title.initials
     }
     
@@ -73,10 +73,12 @@ public extension College.Properties {
 
 ///:
 
-fileprivate extension College {
-    static let citySeparators = [", ", " at ", " in "]
+extension College {
+    fileprivate static let citySeparators = [", ", " at ", " in "]
     
-    static func title(from stringValue: String) -> (title: String, city: String?) {
+    fileprivate static func title(
+        from stringValue: String
+    ) -> (title: String, city: String?) {
         guard let citySeparator = citySeparators.first(where: stringValue.contains) else {
             return (stringValue, nil)
         }
@@ -97,8 +99,10 @@ fileprivate extension College {
 
 ///: College.updating(_:)
 
-internal extension College {
-    func updating<V>(_ keyPath: WritableKeyPath<College.Properties, V>, to value: V) -> Self {
+extension College {
+    internal func updating<V>(
+        _ keyPath: WritableKeyPath<College.Properties, V>, to value: V
+    ) -> Self {
         var new = self
         new[keyPath] = value
         return new

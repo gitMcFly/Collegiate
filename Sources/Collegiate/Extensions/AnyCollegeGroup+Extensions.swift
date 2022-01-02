@@ -18,8 +18,8 @@ extension AnyCollegeGroup: CaseIterable {
     
 }
 
-fileprivate extension ArrayBuilder {
-    static func buildExpression<CG: CollegeGroup>(_ collegeGroup: CG) -> [AnyCollegeGroup] {
+extension ArrayBuilder {
+    fileprivate static func buildExpression<CG: CollegeGroup>(_ collegeGroup: CG) -> [AnyCollegeGroup] {
         [collegeGroup.eraseToAnyCollegeGroup()]
     }
     

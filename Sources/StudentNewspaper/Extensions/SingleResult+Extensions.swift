@@ -7,8 +7,8 @@
 
 import unstandard
 
-internal extension SingleResult {
-    static func buildExpression(_ element: SiteReference) -> SiteReference {
+extension SingleResult {
+    internal static func buildExpression(_ element: SiteReference) -> SiteReference {
         element
     }
     

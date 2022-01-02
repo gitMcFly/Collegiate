@@ -15,8 +15,8 @@ public protocol UniversitySystem: Identifiable {
     
 }
 
-public extension UniversitySystem {
-    var title: String {
+extension UniversitySystem {
+    public var title: String {
         "\(self)"
             .chunked { $0.isUppercase || $1.isLowercase }
             .map(\.capitalized)

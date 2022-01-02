@@ -17,7 +17,7 @@ public enum Country {
 }
 
 extension Country {
-    var formattedTitle: String {
+    internal var formattedTitle: String {
         "\(self)".chunked { $0.isUppercase || $1.isLowercase }
             .map(\.capitalized)
             .replacingOccurrences(of: "Of", with: "of")

@@ -16,8 +16,9 @@ public enum StudentNewspaper: CaseIterable {
     
 }
 
-public extension StudentNewspaper {
-    @SingleResult var siteReference: SiteReference? {
+extension StudentNewspaper {
+    @SingleResult
+    public var siteReference: SiteReference? {
         switch self {
         case .blueBanner: .authority("thebluebanner.net")
         case .dailyBeacon: .authority("utdailybeacon.com")
