@@ -1,20 +1,10 @@
 import XCTest
-import unstandard
 @testable import CollegeGroup
 @testable import Collegiate
 @testable import PartialAddress
 @testable import StudentNewspaper
 
 final class CollegiateTests: XCTestCase {
-    static var allTests = [
-        ("testCountryTitle", testCountryTitle),
-        ("testCollegesHaveCities", testCollegesHaveCities),
-        ("testStudentNewspaperURLFormatting", testStudentNewspaperURLFormatting),
-    ]
-    
-}
-
-extension CollegiateTests {
     func testCountryTitle() {
         let usa = Country.unitedStatesOfAmerica
         XCTAssertEqual(usa.formattedTitle, "United States of America")
