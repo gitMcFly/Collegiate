@@ -27,7 +27,6 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-algorithms.git", from: "1.0.0"),
-        .package(url: "https://github.com/christopherweems/Resultto.git", from: "0.2.2"),
         .package(url: "https://github.com/gitMcFly/MixedGroup.git", from: "0.0.2"),
         .package(url: "https://github.com/christopherweems/Statehood.git", from: "0.2.2"),
         .package(url: "https://github.com/christopherweems/unstandard.git", branch: "main"),
@@ -57,7 +56,7 @@ let package = Package(
             name: "PartialAddress",
             dependencies: [
                 .product(name: "Algorithms", package: "swift-algorithms"),
-                .product(name: "Resultto", package: "Resultto"),
+                .product(name: "Resultto", package: "unstandard"),
                 .product(name: "Statehood", package: "Statehood"),
                 .product(name: "unstandard", package: "unstandard"),
             ]),
